@@ -1,14 +1,14 @@
 /*
 Arquivo: src/app/(site)/projects/[slug]/page.tsx
-Objetivo: Pagina publica do site (rota App Router).
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Página pública do site (rota App Router).
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import { cases, casesBySlug } from '@/lib/site-content/projects'
+import { projects, projectsBySlug } from '@/lib/site-content/projects'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -16,15 +16,15 @@ interface PageProps {
 
 export default async function ProjectDetailPage({ params }: PageProps) {
   const { slug } = await params
-  const project = casesBySlug[slug]
+  const project = projectsBySlug[slug]
 
   if (!project) {
     notFound()
   }
 
-  const index = cases.findIndex((item) => item.slug === project.slug)
-  const prevProject = index > 0 ? cases[index - 1] : null
-  const nextProject = index < cases.length - 1 ? cases[index + 1] : null
+  const index = projects.findIndex((item) => item.slug === project.slug)
+  const prevProject = index > 0 ? projects[index - 1] : null
+  const nextProject = index < projects.length - 1 ? projects[index + 1] : null
 
   return (
     <>
@@ -48,7 +48,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             className="inline-flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.18em] text-white/75 transition-colors hover:text-brand-cyan"
           >
             <ArrowLeft size={12} />
-            Voltar para cases
+            Voltar para projetos
           </Link>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
@@ -57,7 +57,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.category}
               </span>
               <p className="mt-5 font-inter text-[11px] uppercase tracking-[0.18em] text-white/70">
-                Case Arcane / {project.segment}
+                Projeto Arcane / {project.segment}
               </p>
               <h1 className="mt-3 font-cormorant text-[2.9rem] leading-[0.98] text-white sm:text-[3.6rem] lg:text-[5.2rem]">
                 {project.title}

@@ -3,25 +3,25 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { mergePublishedPageContent } from '@/lib/page-content'
 import {
-  cases,
-  caseCategories,
+  projects,
+  projectCategories,
   categoryDescriptions,
-  type CaseItem,
+  type ProjectItem,
 } from '@/lib/site-content/projects'
 
-const groupedCases = caseCategories.map((category) => ({
+const groupedProjects = projectCategories.map((category) => ({
   category,
   description: categoryDescriptions[category],
-  items: cases.filter((item) => item.category === category),
+  items: projects.filter((item) => item.category === category),
 }))
 
-const leadingCase = cases[0]
+const leadingProject = projects[0]
 
 const projectsDefaults = {
   projects_heading: 'Provas publicadas de como arquitetura, operação e resultado se encontram em entregas reais.',
   projects_description:
-    'Publicamos os cases em formato editorial para preservar confidencialidade comercial sem perder o que realmente importa: tensão do projeto, solução desenhada, decisões técnicas e impacto operacional.',
-  projects_cta_title: 'Quer um case como este no seu negócio?',
+    'Publicamos os projetos em formato editorial para preservar confidencialidade comercial sem perder o que realmente importa: tensão do projeto, solução desenhada, decisões técnicas e impacto operacional.',
+  projects_cta_title: 'Quer um projeto como este no seu negócio?',
   projects_cta_button: 'Agendar reunião técnica',
   projects_cta_url: '/agendar-reuniao',
 }
@@ -36,7 +36,7 @@ export default async function ProjectsPage() {
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.96fr_1.04fr] lg:items-end">
             <div className="max-w-4xl">
-              <span className="section-kicker text-brand-cyan">Portfólio / Cases</span>
+              <span className="section-kicker text-brand-cyan">Portfólio / Projetos</span>
               <h1 className="mt-5 font-cormorant text-[2.8rem] leading-[0.98] text-white lg:text-[4.9rem]">
                 {content.projects_heading}
               </h1>
@@ -48,22 +48,22 @@ export default async function ProjectsPage() {
             <article className="panel-shell-dark overflow-hidden rounded-[2rem] p-4">
               <div className="relative min-h-[22rem] overflow-hidden rounded-[1.55rem] border border-white/10">
                 <Image
-                  src={leadingCase.coverImage}
-                  alt={leadingCase.coverAlt}
+                  src={leadingProject.coverImage}
+                  alt={leadingProject.coverAlt}
                   fill
                   className="object-cover"
-                  style={{ objectPosition: leadingCase.coverPosition ?? 'center center' }}
+                  style={{ objectPosition: leadingProject.coverPosition ?? 'center center' }}
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.14)_0%,rgba(7,17,31,0.84)_100%)]" />
                 <div className="absolute inset-x-0 bottom-0 p-5">
                   <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">
-                    {leadingCase.category}
+                    {leadingProject.category}
                   </p>
                   <h2 className="mt-2 font-cormorant text-[2rem] leading-tight text-white">
-                    {leadingCase.title}
+                    {leadingProject.title}
                   </h2>
                   <p className="mt-3 font-inter text-sm leading-relaxed text-slate-200">
-                    {leadingCase.excerpt}
+                    {leadingProject.excerpt}
                   </p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default async function ProjectsPage() {
           </div>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
-            {groupedCases.map((group) => (
+            {groupedProjects.map((group) => (
               <div key={group.category} className="rounded-[1.4rem] border border-white/10 bg-white/[0.04] px-5 py-5 backdrop-blur-md">
                 <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">
                   {group.category}
@@ -86,7 +86,7 @@ export default async function ProjectsPage() {
 
       <section className="section-shell py-12 lg:py-16">
         <div className="container mx-auto space-y-14 px-6 lg:px-12">
-          {groupedCases.map((group) => (
+          {groupedProjects.map((group) => (
             <section key={group.category} className="space-y-6">
               <div className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
                 <div className="max-w-3xl">
@@ -136,7 +136,7 @@ export default async function ProjectsPage() {
   )
 }
 
-function ProjectCard({ project }: { project: CaseItem }) {
+function ProjectCard({ project }: { project: ProjectItem }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
@@ -172,7 +172,7 @@ function ProjectCard({ project }: { project: CaseItem }) {
         </div>
 
         <span className="mt-6 inline-flex items-center gap-2 font-inter text-[11px] uppercase tracking-[0.18em] text-brand-cyan-strong transition-colors group-hover:text-brand-cyan-strong">
-          Ver estudo de caso
+          Ver projeto
           <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
         </span>
       </div>

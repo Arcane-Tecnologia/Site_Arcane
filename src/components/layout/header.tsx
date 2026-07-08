@@ -1,7 +1,7 @@
 /*
 Arquivo: src/components/layout/header.tsx
 Objetivo: Componente estrutural de layout (ex.: header/footer).
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 'use client'
@@ -20,7 +20,7 @@ import { siteConfig } from '@/lib/site-config'
 const navItems = [
   { label: 'Início', href: '/' },
   { label: 'Serviços', href: '/services' },
-  { label: 'Cases', href: '/projects' },
+  { label: 'Projetos', href: '/projects' },
   { label: 'Sobre', href: '/about' },
   { label: 'Contato', href: '/contact' },
 ]
@@ -72,9 +72,9 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                 <Image
                   src="/images/logo-arcane.webp"
                   alt="Arcane Tecnologia"
-                  width={340}
-                  height={120}
-                  className="h-auto w-[260px] lg:w-[340px] drop-shadow-[0_0_4px_rgba(255,255,255,0.95)] brightness-125"
+                  width={1600}
+                  height={500}
+                  className="h-auto w-[400px] lg:w-[540px] drop-shadow-[0_0_1px_rgba(255,255,255,0.30)]"
                   priority
                 />
               </motion.div>

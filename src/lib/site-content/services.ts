@@ -148,7 +148,7 @@ export const services: ServiceItem[] = [
     excerpt: 'Sites institucionais de alta performance para posicionamento, autoridade e geração de demanda.',
     subtitle: 'Marca forte com engenharia focada em performance.',
     description:
-      'Construímos sites premium para empresas que precisam posicionamento sólido, navegação clara e conversão em canais digitais. A entrega combina branding, UX, performance técnica e estrutura de conteúdo orientada a demanda.',
+      'Construímos sites premium para empresas que precisam de posicionamento sólido, navegação clara e conversão em canais digitais. A entrega combina branding, UX, performance técnica e estrutura de conteúdo orientada a demanda.',
     idealFor: [
       'Empresas B2B que precisam elevar percepção de marca e filtrar melhor oportunidades',
       'Operações comerciais que dependem de autoridade digital para vender soluções complexas',
@@ -160,7 +160,7 @@ export const services: ServiceItem[] = [
       'Falta de alinhamento entre posicionamento, UX, performance e arquitetura de conteúdo',
     ],
     proofHighlights: [
-      { label: 'Escopo típico', value: 'home, páginas de oferta, cases, trust pages e fluxos de contato' },
+      { label: 'Escopo típico', value: 'home, páginas de oferta, projetos, trust pages e fluxos de contato' },
       { label: 'Entrega central', value: 'posição premium com base técnica forte' },
       { label: 'Foco executivo', value: 'marca, conversão e sustentação comercial' },
     ],

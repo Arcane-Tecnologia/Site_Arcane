@@ -1,7 +1,7 @@
 /*
 Arquivo: src/components/sections/hero.tsx
-Objetivo: Secao de interface usada em paginas publicas.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Seção de interface usada em páginas públicas.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 'use client'
@@ -77,7 +77,7 @@ export function Hero({
             href="/projects"
             className="group mt-8 inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white/76 transition-colors hover:text-white"
           >
-            Ver cases selecionados
+            Ver projetos selecionados
             <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
           </Link>
         </motion.div>

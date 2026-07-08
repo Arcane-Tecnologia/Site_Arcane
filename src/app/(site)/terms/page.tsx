@@ -1,7 +1,7 @@
 /*
 Arquivo: src/app/(site)/terms/page.tsx
-Objetivo: Pagina publica do site (rota App Router).
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Página pública do site (rota App Router).
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 import { siteConfig } from '@/lib/site-config'

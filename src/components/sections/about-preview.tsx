@@ -1,7 +1,7 @@
 /*
 Arquivo: src/components/sections/about-preview.tsx
-Objetivo: Secao de interface usada em paginas publicas.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Seção de interface usada em páginas públicas.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 'use client'

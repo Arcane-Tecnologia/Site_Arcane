@@ -1,19 +1,19 @@
-export const caseCategories = [
+export const projectCategories = [
   'Fintech & Web3',
   'IA & Automação SaaS',
   'IoT & Sistemas de Gestão',
 ] as const
 
-export type CaseCategory = (typeof caseCategories)[number]
-export type CaseStage = 'PUBLISHED' | 'WORK_IN_PROGRESS' | 'COMING_SOON'
+export type ProjectCategory = (typeof projectCategories)[number]
+export type ProjectStage = 'PUBLISHED' | 'WORK_IN_PROGRESS' | 'COMING_SOON'
 
-export interface CaseItem {
+export interface ProjectItem {
   id: string
   slug: string
   title: string
-  category: CaseCategory
+  category: ProjectCategory
   segment: string
-  stage: CaseStage
+  stage: ProjectStage
   excerpt: string
   challengePoints: string[]
   context: string
@@ -28,7 +28,7 @@ export interface CaseItem {
   confidentialityNote?: string
 }
 
-export const categoryDescriptions: Record<CaseCategory, string> = {
+export const categoryDescriptions: Record<ProjectCategory, string> = {
   'Fintech & Web3':
     'Arquiteturas financeiras, engines transacionais e operações digitais com requisitos elevados de consistência, rastreabilidade e resiliência.',
   'IA & Automação SaaS':
@@ -37,7 +37,42 @@ export const categoryDescriptions: Record<CaseCategory, string> = {
     'Plataformas conectadas à operação real, integrando dispositivos, workflows internos, governança de dados e software orientado a controle.',
 }
 
-export const cases: CaseItem[] = [
+export const projects: ProjectItem[] = [
+  {
+    id: '10',
+    slug: 'automacao-ollama-n8n-evolution',
+    title: 'Integração Ollama, n8n e Evolution API para Geração de Leads',
+    category: 'IA & Automação SaaS',
+    segment: 'Automação comercial com IA',
+    stage: 'PUBLISHED',
+    excerpt:
+      'Solução inteligente que captura conversas do WhatsApp, interpreta a intenção do cliente com IA local e encaminha leads qualificados para CRM ou equipe comercial.',
+    challengePoints: [
+      'Contatos chegam sem organização',
+      'Leads não são classificados por intenção',
+      'O tempo de resposta depende da disponibilidade humana',
+      'A equipe comercial recebe mensagens sem contexto',
+    ],
+    context:
+      'O WhatsApp é um dos principais canais de venda para pequenas e médias empresas, mas o atendimento manual pode gerar perda de oportunidades quando não existe um processo claro de triagem e acompanhamento.',
+    solution:
+      'Foi estruturado um fluxo inteligente de automação para transformar conversas do WhatsApp em leads organizados. A Evolution API captura os eventos de mensagem, o n8n processa e orquestra as etapas, e o Ollama interpreta a intenção do usuário com IA local.',
+    architecture:
+      'Arquitetura modular: Evolution API para WhatsApp, n8n como orquestrador, Ollama para IA local, e destino final em CRM, planilha ou banco de dados. Permite substituir ou expandir componentes conforme a maturidade do negócio.',
+    outcomes: [
+      'Mais velocidade no atendimento inicial',
+      'Melhor organização dos leads',
+      'Menos perda de oportunidades',
+      'Mais clareza sobre o perfil dos contatos',
+      'Priorização de leads com maior intenção de compra',
+      'Processo mais escalável para o time de vendas',
+    ],
+    stack: ['Ollama', 'n8n', 'Evolution API', 'WhatsApp', 'IA local', 'CRM'],
+    coverImage: '/projects/automacao-n8n.png',
+    coverAlt: 'Ambiente técnico moderno com monitor, dashboard e fluxos de automação integrados.',
+    coverPosition: 'center center',
+    featured: true,
+  },
   {
     id: '1',
     slug: 'plataforma-fintech-ledger-imutavel',
@@ -102,7 +137,7 @@ export const cases: CaseItem[] = [
     coverPosition: '38% center',
     featured: false,
     confidentialityNote:
-      'A nomenclatura pública do case foi mantida em formato descritivo para evitar exposição de produto e estratégia proprietária.',
+      'A nomenclatura pública do projeto foi mantida em formato descritivo para evitar exposição de produto e estratégia proprietária.',
   },
   {
     id: '3',
@@ -200,37 +235,6 @@ export const cases: CaseItem[] = [
     featured: false,
   },
   {
-    id: '6',
-    slug: 'gasnow-monitoramento-gas',
-    title: 'GasNow: Monitoramento Inteligente de Gás',
-    category: 'IoT & Sistemas de Gestão',
-    segment: 'IoT para utilidades e distribuição',
-    stage: 'PUBLISHED',
-    excerpt:
-      'Solução conectada com ESP32 e LoRa para monitoramento remoto de gás, consolidação de telemetria e predição de consumo.',
-    challengePoints: [
-      'Transformar leituras físicas e reativas em telemetria confiável',
-      'Consolidar dados de ativos distribuídos em uma base operacional útil',
-      'Criar uma camada de predição e alerta sem perder simplicidade de operação',
-    ],
-    context:
-      'A operação precisava transformar leituras físicas e rotinas reativas em acompanhamento contínuo, com dados confiáveis para planejar reposição, identificar variações e antecipar comportamento de consumo.',
-    solution:
-      'A Arcane integrou dispositivos embarcados, comunicação LoRa e backend analítico para captar medições, acompanhar nível e comportamento de uso, além de projetar consumo com base em histórico operacional.',
-    architecture:
-      'Dispositivos ESP32 em campo, comunicação LoRa para transmissão de telemetria, backend para ingestão e normalização de dados, dashboards operacionais e modelos de previsão para apoiar planejamento e alertas.',
-    outcomes: [
-      'Leitura remota mais frequente e organizada para acompanhamento de ativos distribuídos.',
-      'Visibilidade histórica para entender padrões de consumo e orientar reposição.',
-      'Base técnica para alertas operacionais e evolução de previsões conforme a operação amadurece.',
-    ],
-    stack: ['ESP32', 'LoRa', 'IoT backend', 'Predição de consumo', 'Dashboards'],
-    coverImage: '/projects/gasnow.jpg',
-    coverAlt: 'Placa eletrônica e componentes de hardware representando telemetria e IoT.',
-    coverPosition: 'center center',
-    featured: true,
-  },
-  {
     id: '7',
     slug: 'etiquetas-eletronicas-atualizacao-massiva',
     title: 'Plataforma de Etiquetas Eletrônicas com Atualização Massiva',
@@ -292,7 +296,7 @@ export const cases: CaseItem[] = [
     coverPosition: 'center center',
     featured: true,
     confidentialityNote:
-      'O nome do case foi mantido em formato descritivo para preservar instituições, territórios e dados operacionais sensíveis do contexto real.',
+      'O nome do projeto foi mantido em formato descritivo para preservar instituições, territórios e dados operacionais sensíveis do contexto real.',
   },
   {
     id: '9',
@@ -327,6 +331,6 @@ export const cases: CaseItem[] = [
   },
 ]
 
-export const casesBySlug: Record<string, CaseItem> = Object.fromEntries(
-  cases.map((item) => [item.slug, item])
+export const projectsBySlug: Record<string, ProjectItem> = Object.fromEntries(
+  projects.map((item) => [item.slug, item])
 )

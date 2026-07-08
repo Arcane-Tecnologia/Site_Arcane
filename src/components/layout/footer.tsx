@@ -1,7 +1,7 @@
 /*
 Arquivo: src/components/layout/footer.tsx
 Objetivo: Componente estrutural de layout (ex.: header/footer).
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 'use client'
@@ -9,17 +9,19 @@ Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a expo
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowUpRight, Linkedin, Mail, MapPin } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import { ConversionCTAs } from '@/components/ui/conversion-ctas'
 import type { ConversionCtaConfig } from '@/lib/cta-config'
 import { siteConfig } from '@/lib/site-config'
 
 const socialLinks = [
   { icon: Linkedin, href: siteConfig.links.linkedin, label: 'LinkedIn' },
+  { icon: FaWhatsapp, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
 ]
 
 const navLinks = [
   { label: 'Serviços', href: '/services' },
-  { label: 'Cases', href: '/projects' },
+  { label: 'Projetos', href: '/projects' },
   { label: 'Sobre', href: '/about' },
   { label: 'Contato', href: '/contact' },
 ]

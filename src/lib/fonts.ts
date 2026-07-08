@@ -1,7 +1,7 @@
 /*
 Arquivo: src/lib/fonts.ts
-Objetivo: Funcoes utilitarias e integracoes compartilhadas.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Funções utilitárias e integrações compartilhadas.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 import { Cormorant_Garamond, Inter, Playfair_Display } from 'next/font/google'

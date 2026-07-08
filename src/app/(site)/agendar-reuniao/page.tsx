@@ -12,7 +12,7 @@ export default function ScheduleMeetingPage() {
   return (
     <Suspense fallback={null}>
       <ContactLeadPage
-        objectiveLabel="Reuniao tecnica"
+        objectiveLabel="Reunião técnica"
         defaultIntent="reuniao-tecnica"
         heroTitle="Agende sua reunião técnica"
         heroDescription="Marque uma conversa com nosso time para analisar seu contexto atual e desenhar o melhor caminho de implementação."

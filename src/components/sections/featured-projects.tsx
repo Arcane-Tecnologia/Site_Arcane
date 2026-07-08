@@ -1,7 +1,7 @@
 /*
 Arquivo: src/components/sections/featured-projects.tsx
-Objetivo: Secao de interface usada em paginas publicas.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Seção de interface usada em páginas públicas.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 'use client'
@@ -10,10 +10,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import type { CaseItem } from '@/lib/site-content/projects'
+import type { ProjectItem } from '@/lib/site-content/projects'
 
 interface FeaturedProjectsProps {
-  projects: CaseItem[]
+  projects: ProjectItem[]
 }
 
 export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
@@ -30,7 +30,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
             transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
-            <span className="section-kicker text-brand-cyan">Cases selecionados</span>
+            <span className="section-kicker text-brand-cyan">Projetos selecionados</span>
             <h2 className="mt-5 font-cormorant text-[2.1rem] leading-[1.02] text-white lg:text-[3rem]">
               Duas entregas para mostrar como pensamos arquitetura na prática.
             </h2>
@@ -40,7 +40,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
             href="/projects"
             className="group inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-300 transition-colors hover:text-white"
           >
-            Ver todos os cases
+            Ver todos os projetos
             <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
@@ -63,7 +63,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
   )
 }
 
-function ProjectCard({ project }: { project: CaseItem }) {
+function ProjectCard({ project }: { project: ProjectItem }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
@@ -88,7 +88,7 @@ function ProjectCard({ project }: { project: CaseItem }) {
           {project.excerpt}
         </p>
         <div className="mt-6 inline-flex items-center gap-2 font-inter text-[11px] uppercase tracking-[0.18em] text-white/84">
-          Explorar case
+          Explorar projeto
           <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
         </div>
       </div>

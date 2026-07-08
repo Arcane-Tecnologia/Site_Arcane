@@ -1,3 +1,5 @@
+import { buildWhatsAppUrl } from './site-config'
+
 export interface ConversionActionConfig {
   label: string
   href: string
@@ -20,6 +22,6 @@ export const defaultConversionCtas: ConversionCtaConfig = {
   },
   whatsapp: {
     label: 'Abrir contato comercial',
-    href: '/contact',
+    href: buildWhatsAppUrl('Olá, vim pelo site da Arcane e gostaria de conversar sobre um projeto.'),
   },
 }

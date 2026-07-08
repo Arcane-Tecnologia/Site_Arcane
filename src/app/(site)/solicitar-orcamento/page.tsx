@@ -12,7 +12,7 @@ export default function RequestQuotePage() {
   return (
     <Suspense fallback={null}>
       <ContactLeadPage
-        objectiveLabel="Solicitar orcamento"
+        objectiveLabel="Solicitar orçamento"
         defaultIntent="orcamento"
         heroTitle="Solicite seu orçamento técnico"
         heroDescription="Compartilhe o contexto do seu projeto para receber uma proposta alinhada a escopo, prazo e impacto esperado."

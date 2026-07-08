@@ -7,6 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Inbox, Linkedin, Mail, MapPin, Send } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
@@ -30,6 +31,14 @@ const contactInfo = [
     value: siteConfig.contact.email,
     href: `mailto:${siteConfig.contact.email}`,
   },
+  siteConfig.contact.phoneDisplay
+    ? {
+        icon: FaWhatsapp,
+        label: 'WhatsApp',
+        value: siteConfig.contact.phoneDisplay,
+        href: siteConfig.links.whatsapp,
+      }
+    : null,
   {
     icon: MapPin,
     label: 'Localização',
@@ -38,7 +47,10 @@ const contactInfo = [
   },
 ].filter(Boolean) as Array<{ icon: LucideIcon; label: string; value: string; href: string | null }>
 
-const socialLinks = [{ icon: Linkedin, href: siteConfig.links.linkedin, label: 'LinkedIn' }]
+const socialLinks = [
+  { icon: Linkedin, href: siteConfig.links.linkedin, label: 'LinkedIn' },
+  { icon: FaWhatsapp, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
+]
 
 const supportSignals = [
   'Dúvidas institucionais, informações e atendimento geral',

@@ -1,7 +1,7 @@
 /*
 Arquivo: src/app/(site)/page.tsx
-Objetivo: Arquivo de codigo da aplicacao.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Arquivo de código da aplicação.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 import { Hero } from '@/components/sections/hero'
@@ -10,9 +10,9 @@ import { FeaturedProjects } from '@/components/sections/featured-projects'
 import { ServicesPreview } from '@/components/sections/services-preview'
 import { AboutPreview } from '@/components/sections/about-preview'
 import { getGlobalConversionCtas, mergePublishedPageContent } from '@/lib/page-content'
-import { cases } from '@/lib/site-content/projects'
+import { projects } from '@/lib/site-content/projects'
 
-const featuredProjects = cases.filter((item) => item.featured).slice(0, 4)
+const featuredProjects = projects.filter((item) => item.featured).slice(0, 4)
 
 const homeDefaults = {
   hero_heading: 'Software sob medida para negócios que precisam operar com mais clareza e menos atrito.',

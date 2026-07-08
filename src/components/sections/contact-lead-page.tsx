@@ -8,6 +8,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { CalendarDays, Linkedin, Mail, MapPin, Send } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
@@ -49,7 +50,10 @@ const contactInfo = [
   },
 ].filter(Boolean) as Array<{ icon: LucideIcon; label: string; value: string; href: string | null }>
 
-const socialLinks = [{ icon: Linkedin, href: siteConfig.links.linkedin, label: 'LinkedIn' }]
+const socialLinks = [
+  { icon: Linkedin, href: siteConfig.links.linkedin, label: 'LinkedIn' },
+  { icon: FaWhatsapp, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
+]
 
 const nextSteps = [
   'Leitura do contexto e da criticidade do projeto',

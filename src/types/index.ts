@@ -1,7 +1,7 @@
 /*
 Arquivo: src/types/index.ts
 Objetivo: Tipos e contratos TypeScript centralizados.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 // ===========================================

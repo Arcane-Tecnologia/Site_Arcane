@@ -1,7 +1,7 @@
 /*
 Arquivo: src/components/ui/button.tsx
-Objetivo: Componente de UI reutilizavel.
-Guia rapido: imports, variantes visuais e exportacao do componente.
+Objetivo: Componente de UI reutilizável.
+Guia rápido: imports, variantes visuais e exportação do componente.
 */
 
 import * as React from "react"

@@ -1,7 +1,7 @@
 /*
 Arquivo: src/app/(site)/layout.tsx
-Objetivo: Layout compartilhado entre paginas da respectiva area.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Layout compartilhado entre páginas da respectiva área.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 import { Header } from "@/components/layout/header"

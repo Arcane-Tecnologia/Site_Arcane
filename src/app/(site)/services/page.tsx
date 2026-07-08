@@ -162,7 +162,7 @@ export default async function ServicesPage() {
           </p>
           <p className="mx-auto mt-4 max-w-2xl font-inter text-sm leading-relaxed text-white/88">
             A conversa inicial existe para entender criticidade, dependências, urgência e o que precisa acontecer
-            para a tecnologia realmente destravar negócio.
+            para a tecnologia realmente destravar o negócio.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link

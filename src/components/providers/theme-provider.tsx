@@ -1,7 +1,7 @@
 /*
 Arquivo: src/components/providers/theme-provider.tsx
-Objetivo: Provider global de contexto para a aplicacao.
-Guia rapido: consulte imports no topo, depois tipos/constantes, e por fim a exportacao principal.
+Objetivo: Provider global de contexto para a aplicação.
+Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
 'use client'

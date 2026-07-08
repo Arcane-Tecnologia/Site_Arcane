@@ -10,13 +10,13 @@ export const siteConfig = {
     email: 'contato@arcane.tech',
     salesEmail: 'comercial@arcane.tech',
     privacyEmail: 'privacy@arcane.tech',
-    phoneDisplay: null,
-    phoneE164: null,
-    city: 'Sao Paulo, Brasil',
+    phoneDisplay: '(12) 99133-2258',
+    phoneE164: '5512991332258',
+    city: 'São Paulo, Brasil',
   },
   links: {
     linkedin: 'https://www.linkedin.com/company/arcane-tecnologia',
-    whatsapp: null,
+    whatsapp: 'https://wa.me/5512991332258',
   },
   seo: {
     title: 'Arcane Tecnologia | Arquitetura, automação e software sob medida',
