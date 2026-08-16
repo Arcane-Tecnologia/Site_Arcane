@@ -22,9 +22,16 @@ import {
   Lightbulb,
   MapPin,
 } from 'lucide-react'
+import { createPageMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Case de Automação com IA para Geração de Leads | Arcane Tecnologia',
+  ...createPageMetadata({
+    title: 'Case de Automação com IA para Geração de Leads | Arcane Tecnologia',
+    description:
+      'Conheça o projeto de integração entre Ollama, n8n e Evolution API para geração e qualificação de leads via WhatsApp, com automação inteligente e IA local.',
+    path: '/projects/automacao-ollama-n8n-evolution',
+    type: 'article',
+  }),
   description:
     'Conheça o projeto de integração entre Ollama, n8n e Evolution API para geração e qualificação de leads via WhatsApp, com automação inteligente e IA local.',
   keywords: [
@@ -154,7 +161,7 @@ const stackCards = [
 const overviewCards = [
   { icon: MessageSquare, title: 'Canal de entrada', text: 'WhatsApp integrado via Evolution API para captura e envio de mensagens.' },
   { icon: Workflow, title: 'Orquestração', text: 'n8n responsável pelo fluxo, regras, integrações e encaminhamentos.' },
-  { icon: BrainCircuit, title: 'Inteligência', text: 'Ollama utilizado para interpretação, classificação e geração de respostas com IA local.' },
+  { icon: BrainCircuit, title: 'Inteligência', text: 'Ollama é utilizado para interpretação, classificação e geração de respostas com IA local.' },
 ]
 
 export default function AutomacaoOllamaN8nEvolutionPage() {
@@ -162,7 +169,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
     <>
       {/* 1. Hero do projeto */}
       <section className="section-shell-dark premium-grid relative overflow-hidden pt-28 lg:pt-36">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.22),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.22),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 pb-16 lg:px-12 lg:pb-24">
           <Link
             href="/projects"
@@ -192,7 +199,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="#visao-geral"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-6 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-6 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
                 >
                   Ver detalhes do projeto
                   <ArrowRight size={14} />
@@ -216,7 +223,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
                   priority
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.08)_0%,rgba(2,6,23,0.52)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(25,22,19,0.08)_0%,rgba(25,22,19,0.52)_100%)]" />
               </div>
             </div>
           </div>
@@ -338,7 +345,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
                 key={step}
                 className="flex items-start gap-4 rounded-[1.4rem] border border-white/60 bg-white/55 px-5 py-4 backdrop-blur-md"
               >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-950 font-inter text-[11px] font-semibold text-cyan-100">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#191613] font-inter text-[11px] font-semibold text-brand-sand">
                   {index + 1}
                 </span>
                 <p className="font-inter text-sm leading-relaxed text-slate-700">{step}</p>
@@ -574,7 +581,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
 
       {/* 13. Seção comercial */}
       <section className="section-shell-dark premium-grid py-16 lg:py-24">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="mx-auto max-w-3xl text-center">
             <span className="section-kicker justify-center">Automação não substitui o vendedor</span>
@@ -603,7 +610,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link
               href="/solicitar-orcamento"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
             >
               Solicitar projeto semelhante
               <ArrowRight size={14} />

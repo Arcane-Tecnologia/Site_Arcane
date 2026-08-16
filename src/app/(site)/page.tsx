@@ -4,25 +4,17 @@ Objetivo: Arquivo de código da aplicação.
 Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exportação principal.
 */
 
-import { Hero } from '@/components/sections/hero'
-import { IntroSection } from '@/components/sections/intro'
-import { FeaturedProjects } from '@/components/sections/featured-projects'
-import { ServicesPreview } from '@/components/sections/services-preview'
-import { AboutPreview } from '@/components/sections/about-preview'
+import { ReferenceHome } from '@/components/sections/reference-home'
 import { getGlobalConversionCtas, mergePublishedPageContent } from '@/lib/page-content'
-import { projects } from '@/lib/site-content/projects'
-
-const featuredProjects = projects.filter((item) => item.featured).slice(0, 4)
 
 const homeDefaults = {
-  hero_heading: 'Software sob medida para negócios que precisam operar com mais clareza e menos atrito.',
+  hero_heading: 'Software, automação e IA para transformar complexidade em vantagem operacional.',
   hero_subheading:
-    'Projetamos plataformas, automações e integrações para empresas que precisam reduzir improviso técnico e ganhar base real de execução.',
+    'Desenvolvemos software sob medida, integramos sistemas e automatizamos processos críticos para empresas que não podem parar.',
   hero_cta_label: 'Solicitar orçamento',
   hero_cta_url: '/solicitar-orcamento',
-  intro_title: 'Tecnologia para organizar operação, ganhar previsibilidade e sustentar crescimento.',
-  intro_text:
-    'Entramos quando o negócio precisa de uma base técnica mais sólida para operar melhor e evoluir com menos ruído.',
+  intro_title: 'Soluções sob medida para desafios reais',
+  intro_text: 'Arquitetura, automação e IA aplicadas à operação que precisa ganhar previsibilidade.',
 }
 
 export default async function Home() {
@@ -41,18 +33,11 @@ export default async function Home() {
 
   return (
     <div className="bg-background">
-      <Hero
+      <ReferenceHome
         ctas={heroCtas}
-        title={homeContent.hero_heading}
-        subtitle={homeContent.hero_subheading}
+        heroTitle={homeContent.hero_heading}
+        heroSubtitle={homeContent.hero_subheading}
       />
-      <IntroSection
-        title={homeContent.intro_title}
-        description={homeContent.intro_text}
-      />
-      <ServicesPreview />
-      <FeaturedProjects projects={featuredProjects} />
-      <AboutPreview />
     </div>
   )
 }

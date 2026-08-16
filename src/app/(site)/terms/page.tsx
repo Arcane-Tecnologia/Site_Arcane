@@ -6,6 +6,13 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
 import { siteConfig } from '@/lib/site-config'
 import { mergePublishedPageContent } from '@/lib/page-content'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Termos de Uso | Arcane Tecnologia',
+  description: 'Consulte os termos de uso aplicáveis ao conteúdo e aos canais digitais da Arcane Tecnologia.',
+  path: '/terms',
+})
 
 const termsDefaults = {
   terms_title: 'Termos de Uso',

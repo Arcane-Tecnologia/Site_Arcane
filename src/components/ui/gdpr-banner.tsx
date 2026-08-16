@@ -77,18 +77,21 @@ export function GDPRBanner() {
                   {/* Buttons */}
                   <div className="flex flex-col sm:flex-row gap-3 lg:shrink-0">
                     <button
+                      type="button"
                       onClick={() => setShowSettings(true)}
                       className="px-6 py-3 border border-stone-300 text-stone-700 font-inter text-xs tracking-[0.1em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors"
                     >
                       Gerenciar Cookies
                     </button>
                     <button
+                      type="button"
                       onClick={() => handleConsent('essential')}
                       className="px-6 py-3 border border-stone-300 text-stone-700 font-inter text-xs tracking-[0.1em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors"
                     >
                       Apenas Essenciais
                     </button>
                     <button
+                      type="button"
                       onClick={() => handleConsent('all')}
                       className="px-6 py-3 bg-stone-900 text-white font-inter text-xs tracking-[0.1em] uppercase hover:bg-stone-800 transition-colors"
                     >
@@ -105,8 +108,10 @@ export function GDPRBanner() {
                     Configurações de Cookies
                   </h3>
                   <button
+                    type="button"
                     onClick={() => setShowSettings(false)}
                     className="p-2 text-stone-500 hover:text-stone-900 transition-colors"
+                    aria-label="Fechar configurações de cookies"
                   >
                     <X size={20} />
                   </button>
@@ -161,12 +166,14 @@ export function GDPRBanner() {
 
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button
+                    type="button"
                     onClick={() => handleConsent('essential')}
                     className="flex-1 px-6 py-3 border border-stone-300 text-stone-700 font-inter text-xs tracking-[0.1em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors"
                   >
                     Salvar Preferências
                   </button>
                   <button
+                    type="button"
                     onClick={() => handleConsent('all')}
                     className="flex-1 px-6 py-3 bg-stone-900 text-white font-inter text-xs tracking-[0.1em] uppercase hover:bg-stone-800 transition-colors"
                   >

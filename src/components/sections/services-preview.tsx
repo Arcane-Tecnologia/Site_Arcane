@@ -58,7 +58,7 @@ export function ServicesPreview() {
                 href={`/services/${service.slug}`}
                 className="group panel-shell relative flex h-full flex-col overflow-hidden rounded-[1.7rem] p-4 transition-all hover:-translate-y-1 hover:border-brand-cyan/35"
               >
-                <div className="relative overflow-hidden rounded-[1.25rem] border border-white/50 bg-slate-950/5">
+                <div className="relative overflow-hidden rounded-[1.25rem] border border-white/50 bg-[#191613]/5">
                   <div className="relative h-44">
                     <Image
                       src={service.image}
@@ -66,7 +66,7 @@ export function ServicesPreview() {
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.08)_0%,rgba(7,17,31,0.44)_100%)]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.08)_0%,rgba(43,33,27,0.44)_100%)]" />
                   </div>
                 </div>
 

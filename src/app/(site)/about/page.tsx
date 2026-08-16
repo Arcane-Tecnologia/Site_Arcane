@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { mergePublishedPageContent } from '@/lib/page-content'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Sobre a Arcane | Engenharia de software e produto',
+  description:
+    'Conheça a Arcane, uma empresa de engenharia e produto focada em sistemas sob medida, automações, integrações e experiências digitais premium.',
+  path: '/about',
+})
 
 const principles = [
   {
@@ -55,7 +63,7 @@ export default async function AboutPage() {
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pb-14 pt-32 lg:pb-[4.5rem] lg:pt-40">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
             <div className="max-w-4xl">
@@ -143,7 +151,7 @@ export default async function AboutPage() {
           </p>
           <Link
             href={content.about_cta_url}
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
           >
             {content.about_cta_button}
             <ArrowRight size={14} />

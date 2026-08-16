@@ -6,12 +6,19 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
 import { siteConfig } from '@/lib/site-config'
 import { mergePublishedPageContent } from '@/lib/page-content'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Política de Privacidade | Arcane Tecnologia',
+  description: 'Saiba como a Arcane Tecnologia trata dados enviados pelos canais de contato e formulários do site.',
+  path: '/privacy',
+})
 
 const privacyDefaults = {
   privacy_title: 'Política de Privacidade',
   privacy_last_update: '17 de março de 2026',
   privacy_email: siteConfig.contact.privacyEmail,
-  privacy_response_sla: 'Até 15 dias úteis',
+  privacy_response_sla: 'até 15 dias úteis',
 }
 
 export default async function PrivacyPage() {

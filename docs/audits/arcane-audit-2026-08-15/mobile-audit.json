@@ -1,0 +1,702 @@
+[
+  {
+    "route": "/",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\home--mobile-viewport.png",
+    "bodyLength": 2596,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Software sob medida para negócios que precisam operar com mais clareza e menos atrito."
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "route": "/about",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\about--mobile-viewport.png",
+    "bodyLength": 2342,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "A Arcane existe para transformar complexidade operacional em estrutura tecnológica utilizável."
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/about"
+  },
+  {
+    "route": "/services",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\services--mobile-viewport.png",
+    "bodyLength": 4529,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Ofertas estruturadas para empresas que precisam trocar atrito operacional por capacidade real de execução."
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/services"
+  },
+  {
+    "route": "/services/sistemas-web-personalizados",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\services--sistemas-web-personalizados--mobile-viewport.png",
+    "bodyLength": 3074,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Sistemas Web Personalizados"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Sistemas Web Personalizados | Arcane Tecnologia",
+    "url": "http://localhost:3000/services/sistemas-web-personalizados"
+  },
+  {
+    "route": "/services/sistemas-exclusivos",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\services--sistemas-exclusivos--mobile-viewport.png",
+    "bodyLength": 3067,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Sistemas Exclusivos"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Sistemas Exclusivos | Arcane Tecnologia",
+    "url": "http://localhost:3000/services/sistemas-exclusivos"
+  },
+  {
+    "route": "/services/sites-premium",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\services--sites-premium--mobile-viewport.png",
+    "bodyLength": 3003,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Sites Premium"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Sites Premium | Arcane Tecnologia",
+    "url": "http://localhost:3000/services/sites-premium"
+  },
+  {
+    "route": "/services/e-commerce",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\services--e-commerce--mobile-viewport.png",
+    "bodyLength": 3008,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "E-commerce"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "E-commerce | Arcane Tecnologia",
+    "url": "http://localhost:3000/services/e-commerce"
+  },
+  {
+    "route": "/services/automacao-integracoes-hardware",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\services--automacao-integracoes-hardware--mobile-viewport.png",
+    "bodyLength": 3166,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Automação + Integrações com Hardware"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Automação + Integrações com Hardware | Arcane Tecnologia",
+    "url": "http://localhost:3000/services/automacao-integracoes-hardware"
+  },
+  {
+    "route": "/services/ia-automacoes-comerciais",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\services--ia-automacoes-comerciais--mobile-viewport.png",
+    "bodyLength": 3109,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "IA e Automações Comerciais"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "IA e Automações Comerciais | Arcane Tecnologia",
+    "url": "http://localhost:3000/services/ia-automacoes-comerciais"
+  },
+  {
+    "route": "/projects",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--mobile-viewport.png",
+    "bodyLength": 6414,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Provas publicadas de como arquitetura, operação e resultado se encontram em entregas reais."
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects"
+  },
+  {
+    "route": "/projects/automacao-ollama-n8n-evolution",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--automacao-ollama-n8n-evolution--mobile-viewport.png",
+    "bodyLength": 8845,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Integração Ollama, n8n e Evolution API para Geração de Leads"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Case de Automação com IA para Geração de Leads | Arcane Tecnologia",
+    "url": "http://localhost:3000/projects/automacao-ollama-n8n-evolution"
+  },
+  {
+    "route": "/projects/plataforma-fintech-ledger-imutavel",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--plataforma-fintech-ledger-imutavel--mobile-viewport.png",
+    "bodyLength": 3042,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Plataforma Fintech Cloud-Native com Ledger Imutável"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/plataforma-fintech-ledger-imutavel"
+  },
+  {
+    "route": "/projects/bot-trading-spot-gestao-risco",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--bot-trading-spot-gestao-risco--mobile-viewport.png",
+    "bodyLength": 2984,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Bot de Trading Spot com Gestão de Risco"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/bot-trading-spot-gestao-risco"
+  },
+  {
+    "route": "/projects/entrevistas-ia-whatsapp",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--entrevistas-ia-whatsapp--mobile-viewport.png",
+    "bodyLength": 2832,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Plataforma de Entrevistas via IA no WhatsApp"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/entrevistas-ia-whatsapp"
+  },
+  {
+    "route": "/projects/otimizacao-anuncios-marketplace",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--otimizacao-anuncios-marketplace--mobile-viewport.png",
+    "bodyLength": 2924,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "SaaS de Otimização de Anúncios para Marketplace"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/otimizacao-anuncios-marketplace"
+  },
+  {
+    "route": "/projects/cadencia-emails-auditoria",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--cadencia-emails-auditoria--mobile-viewport.png",
+    "bodyLength": 2769,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Automação de Cadência de E-mails com Auditoria"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/cadencia-emails-auditoria"
+  },
+  {
+    "route": "/projects/etiquetas-eletronicas-atualizacao-massiva",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--etiquetas-eletronicas-atualizacao-massiva--mobile-viewport.png",
+    "bodyLength": 2780,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Plataforma de Etiquetas Eletrônicas com Atualização Massiva"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/etiquetas-eletronicas-atualizacao-massiva"
+  },
+  {
+    "route": "/projects/gestao-acao-social-lgpd",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--gestao-acao-social-lgpd--mobile-viewport.png",
+    "bodyLength": 2970,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Sistema de Gestão de Ação Social com Rastreabilidade LGPD"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/gestao-acao-social-lgpd"
+  },
+  {
+    "route": "/projects/saas-gestao-personal-trainers",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\projects--saas-gestao-personal-trainers--mobile-viewport.png",
+    "bodyLength": 2737,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "SaaS de Gestão para Personal Trainers"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/projects/saas-gestao-personal-trainers"
+  },
+  {
+    "route": "/contact",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\contact--mobile-viewport.png",
+    "bodyLength": 1290,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Fale com a Arcane"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Contato | Arcane Tecnologia",
+    "url": "http://localhost:3000/contact"
+  },
+  {
+    "route": "/agendar-reuniao",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\agendar-reuniao--mobile-viewport.png",
+    "bodyLength": 1568,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Agende sua reunião técnica"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Agendar Reunião Técnica | Arcane Tecnologia",
+    "url": "http://localhost:3000/agendar-reuniao"
+  },
+  {
+    "route": "/solicitar-orcamento",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\solicitar-orcamento--mobile-viewport.png",
+    "bodyLength": 1470,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Solicite seu orçamento técnico"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Solicitar Orçamento | Arcane Tecnologia",
+    "url": "http://localhost:3000/solicitar-orcamento"
+  },
+  {
+    "route": "/privacy",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\privacy--mobile-viewport.png",
+    "bodyLength": 1342,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Política de Privacidade"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/privacy"
+  },
+  {
+    "route": "/terms",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\terms--mobile-viewport.png",
+    "bodyLength": 1075,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Termos de Uso"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/terms"
+  },
+  {
+    "route": "/cookies",
+    "screenshotPath": "C:\\Users\\Administrador\\Documents\\Site_Arcane_Audit_2026-08-15\\cookies--mobile-viewport.png",
+    "bodyLength": 1270,
+    "fixed": [
+      {
+        "bottom": 84,
+        "height": 84,
+        "left": 0,
+        "name": "InícioServiçosProjetosSobreContatocomercial@arcane.techSolicitar orçamento",
+        "right": 375,
+        "tag": "HEADER",
+        "top": 0,
+        "width": 375,
+        "zIndex": "50"
+      }
+    ],
+    "h1": [
+      "Política de Cookies"
+    ],
+    "hasNextError": false,
+    "innerWidth": 390,
+    "offscreen": [],
+    "overflow": false,
+    "scrollWidth": 375,
+    "title": "Arcane Tecnologia | Arquitetura, automação e software sob medida",
+    "url": "http://localhost:3000/cookies"
+  }
+]

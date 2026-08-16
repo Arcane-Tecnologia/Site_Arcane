@@ -5,6 +5,13 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 */
 
 import { mergePublishedPageContent } from '@/lib/page-content'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Política de Cookies | Arcane Tecnologia',
+  description: 'Entenda como o site Arcane Tecnologia usa armazenamento local e preferências de consentimento.',
+  path: '/cookies',
+})
 
 const cookiesDefaults = {
   cookies_title: 'Política de Cookies',

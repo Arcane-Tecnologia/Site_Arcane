@@ -6,7 +6,7 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -27,21 +27,11 @@ const navItems = [
 
 export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
 
-  const darkHeroPages = ['/']
-  const hasDarkHero = darkHeroPages.includes(pathname) || pathname.startsWith('/projects/')
-  const useDarkText = !hasDarkHero || isScrolled || isOpen
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 40)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  // O header agora funciona como uma faixa de autoridade em café profundo,
+  // então navegação e ações mantêm contraste claro em todos os estados.
+  const useDarkText = false
 
   const isItemActive = (href: string) => {
     if (href === '/') {
@@ -54,16 +44,11 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
   return (
     <>
       <header
-        className={cn(
-          'fixed left-0 right-0 top-0 z-50 transition-all duration-500',
-          isScrolled
-            ? 'border-b border-white/10 bg-slate-950/72 shadow-[0_22px_80px_-44px_rgba(2,6,23,0.82)] backdrop-blur-2xl'
-            : 'bg-transparent'
-        )}
+        className="fixed left-0 right-0 top-0 z-50 border-b border-brand-terracotta/30 bg-[#2b211b]/95 shadow-[0_22px_80px_-44px_rgba(25,22,19,0.82)] backdrop-blur-2xl transition-all duration-500"
       >
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="flex h-[5.25rem] items-center justify-between gap-6 lg:h-24">
-            <Link href="/" className="relative z-50">
+          <div className="flex h-20 items-center justify-between gap-6 lg:h-24">
+            <Link href="/" className="relative z-50 shrink-0">
               <motion.div
                 initial={{ opacity: 0, x: -14 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -74,13 +59,13 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                   alt="Arcane Tecnologia"
                   width={1600}
                   height={500}
-                  className="h-auto w-[400px] lg:w-[540px] drop-shadow-[0_0_1px_rgba(255,255,255,0.30)]"
+                  className="block h-auto w-[280px] max-w-none shrink-0 brightness-0 invert sm:w-[360px] md:w-[210px] lg:w-[540px] drop-shadow-[0_0_1px_rgba(255,255,255,0.30)]"
                   priority
                 />
               </motion.div>
             </Link>
 
-            <div className="hidden xl:flex items-center gap-8">
+            <div className="hidden items-center gap-3 md:flex lg:gap-8">
               <div
                 className={cn(
                   'flex items-center gap-1 rounded-full border px-2 py-1 backdrop-blur-md transition-all duration-300',
@@ -100,10 +85,10 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                       href={item.href}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        'relative inline-flex items-center rounded-full px-4 py-2 font-inter text-[11px] uppercase tracking-[0.14em] transition-all duration-300',
+                        'relative inline-flex items-center rounded-full px-3 py-2 font-inter text-[10px] uppercase tracking-[0.12em] transition-all duration-300 lg:px-4 lg:text-[11px] lg:tracking-[0.14em]',
                         isItemActive(item.href)
                           ? useDarkText
-                            ? 'bg-slate-950 text-white shadow-[0_14px_30px_-20px_rgba(7,17,31,0.54)]'
+                            ? 'bg-[#191613] text-white shadow-[0_14px_30px_-20px_rgba(43,33,27,0.54)]'
                             : 'bg-white/10 text-white'
                           : useDarkText
                             ? 'text-slate-600 hover:bg-white hover:text-slate-950'
@@ -116,7 +101,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                 ))}
               </div>
 
-              <div className="hidden 2xl:flex items-center gap-3">
+              <div className="hidden items-center gap-3 lg:flex">
                 <a
                   href={`mailto:${siteConfig.contact.salesEmail}`}
                   className={cn(
@@ -140,14 +125,17 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
             </div>
 
             <button
+              type="button"
               onClick={() => setIsOpen(!isOpen)}
               className={cn(
-                'xl:hidden relative z-50 inline-flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300',
+                'relative z-50 inline-flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300 md:hidden',
                 useDarkText
                   ? 'border-slate-300/80 bg-white/72 text-slate-950'
                   : 'border-white/12 bg-white/6 text-white'
               )}
               aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
+              aria-expanded={isOpen}
+              aria-controls="site-navigation-menu"
             >
               {isOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -162,7 +150,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-40 xl:hidden"
+            className="fixed inset-0 z-40 md:hidden"
           >
             <motion.div
               initial={{ x: '100%' }}
@@ -174,7 +162,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
               <div className="flex h-full flex-col justify-between px-8 pb-10 pt-28">
                 <div>
                   <span className="section-kicker">Mapa do site</span>
-                  <nav className="mt-8 flex flex-col gap-4">
+                  <nav id="site-navigation-menu" className="mt-8 flex flex-col gap-4">
                     {navItems.map((item, index) => (
                       <motion.div
                         key={item.href}

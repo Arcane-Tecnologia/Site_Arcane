@@ -8,6 +8,14 @@ import {
   categoryDescriptions,
   type ProjectItem,
 } from '@/lib/site-content/projects'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Projetos de Engenharia e Automação | Arcane Tecnologia',
+  description:
+    'Veja projetos publicados de sistemas, automações, IA, fintech, integrações e operações digitais desenvolvidos pela Arcane.',
+  path: '/projects',
+})
 
 const groupedProjects = projectCategories.map((category) => ({
   category,
@@ -32,7 +40,7 @@ export default async function ProjectsPage() {
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pb-14 pt-32 lg:pb-[4.5rem] lg:pt-40">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.96fr_1.04fr] lg:items-end">
             <div className="max-w-4xl">
@@ -54,7 +62,7 @@ export default async function ProjectsPage() {
                   className="object-cover"
                   style={{ objectPosition: leadingProject.coverPosition ?? 'center center' }}
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.14)_0%,rgba(7,17,31,0.84)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.14)_0%,rgba(43,33,27,0.84)_100%)]" />
                 <div className="absolute inset-x-0 bottom-0 p-5">
                   <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">
                     {leadingProject.category}
@@ -125,7 +133,7 @@ export default async function ProjectsPage() {
           </p>
           <Link
             href={content.projects_cta_url}
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
           >
             {content.projects_cta_button}
             <ArrowRight size={14} />
@@ -140,7 +148,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group grid overflow-hidden rounded-[2rem] border border-white/65 bg-white/70 shadow-[0_28px_80px_-54px_rgba(15,23,42,0.24)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1 lg:grid-cols-[1.15fr_0.85fr]"
+      className="group grid overflow-hidden rounded-[2rem] border border-white/65 bg-white/70 shadow-[0_28px_80px_-54px_rgba(43,33,27,0.24)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1 lg:grid-cols-[1.15fr_0.85fr]"
     >
       <div className="relative min-h-[19rem] overflow-hidden">
         <Image
@@ -150,8 +158,8 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           style={{ objectPosition: project.coverPosition ?? 'center center' }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,23,42,0.12)_0%,rgba(15,23,42,0.56)_100%)]" />
-        <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-slate-950/55 px-3 py-1 font-inter text-[10px] uppercase tracking-[0.16em] text-cyan-100 backdrop-blur-md">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.12)_0%,rgba(43,33,27,0.56)_100%)]" />
+        <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-[#191613]/55 px-3 py-1 font-inter text-[10px] uppercase tracking-[0.16em] text-brand-sand backdrop-blur-md">
           {project.category}
         </div>
       </div>

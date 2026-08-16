@@ -1,12 +1,14 @@
 import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import { ContactLeadPage } from '@/components/sections/contact-lead-page'
+import { createPageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: 'Solicitar Orçamento | Arcane Tecnologia',
   description:
     'Solicite um orçamento técnico para sistemas sob medida, automações e integrações com foco em resultado.',
-}
+  path: '/solicitar-orcamento',
+})
 
 export default function RequestQuotePage() {
   return (

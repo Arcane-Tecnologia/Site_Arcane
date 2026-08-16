@@ -168,7 +168,7 @@ export function ContactLeadPage({
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pt-28 pb-10 lg:pt-36 lg:pb-14">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-end">
             <motion.div
@@ -322,16 +322,22 @@ export function ContactLeadPage({
                   )}
 
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                    <Field label="Nome *" error={errors.name?.message}>
+                    <Field fieldId="lead-name" label="Nome *" error={errors.name?.message}>
                       <Input
                         {...register('name')}
+                        id="lead-name"
+                        aria-invalid={Boolean(errors.name)}
+                        aria-describedby={errors.name ? 'lead-name-error' : undefined}
                         placeholder="Seu nome"
                         className={cn('field-shell font-inter text-sm', errors.name && 'border-red-400')}
                       />
                     </Field>
-                    <Field label="Empresa *" error={errors.company?.message}>
+                    <Field fieldId="lead-company" label="Empresa *" error={errors.company?.message}>
                       <Input
                         {...register('company')}
+                        id="lead-company"
+                        aria-invalid={Boolean(errors.company)}
+                        aria-describedby={errors.company ? 'lead-company-error' : undefined}
                         placeholder="Nome da empresa"
                         className={cn('field-shell font-inter text-sm', errors.company && 'border-red-400')}
                       />
@@ -339,17 +345,23 @@ export function ContactLeadPage({
                   </div>
 
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                    <Field label="E-mail corporativo *" error={errors.email?.message}>
+                    <Field fieldId="lead-email" label="E-mail corporativo *" error={errors.email?.message}>
                       <Input
                         {...register('email')}
+                        id="lead-email"
+                        aria-invalid={Boolean(errors.email)}
+                        aria-describedby={errors.email ? 'lead-email-error' : undefined}
                         type="email"
                         placeholder="voce@empresa.com"
                         className={cn('field-shell font-inter text-sm', errors.email && 'border-red-400')}
                       />
                     </Field>
-                    <Field label="WhatsApp *" error={errors.phone?.message}>
+                    <Field fieldId="lead-phone" label="WhatsApp *" error={errors.phone?.message}>
                       <Input
                         {...register('phone')}
+                        id="lead-phone"
+                        aria-invalid={Boolean(errors.phone)}
+                        aria-describedby={errors.phone ? 'lead-phone-error' : undefined}
                         placeholder="Seu WhatsApp com DDD"
                         className={cn('field-shell font-inter text-sm', errors.phone && 'border-red-400')}
                       />
@@ -357,18 +369,24 @@ export function ContactLeadPage({
                   </div>
 
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                    <Field label="Tipo de projeto *" error={errors.projectType?.message}>
+                    <Field fieldId="lead-project-type" label="Tipo de projeto *" error={errors.projectType?.message}>
                       <Input
                         {...register('projectType')}
+                        id="lead-project-type"
+                        aria-invalid={Boolean(errors.projectType)}
+                        aria-describedby={errors.projectType ? 'lead-project-type-error' : undefined}
                         placeholder="Ex.: sistema web, IA, integração"
                         className={cn('field-shell font-inter text-sm', errors.projectType && 'border-red-400')}
                       />
                     </Field>
 
                     {requiresBudget ? (
-                      <Field label="Faixa de investimento *" error={errors.budgetRange?.message}>
+                      <Field fieldId="lead-budget-range" label="Faixa de investimento *" error={errors.budgetRange?.message}>
                         <Input
                           {...register('budgetRange')}
+                          id="lead-budget-range"
+                          aria-invalid={Boolean(errors.budgetRange)}
+                          aria-describedby={errors.budgetRange ? 'lead-budget-range-error' : undefined}
                           placeholder="Ex.: 20k-60k, 60k-120k"
                           className={cn('field-shell font-inter text-sm', errors.budgetRange && 'border-red-400')}
                         />
@@ -383,9 +401,12 @@ export function ContactLeadPage({
                     )}
                   </div>
 
-                  <Field label="Descrição do desafio *" error={errors.message?.message}>
+                  <Field fieldId="lead-message" label="Descrição do desafio *" error={errors.message?.message}>
                     <Textarea
                       {...register('message')}
+                      id="lead-message"
+                      aria-invalid={Boolean(errors.message)}
+                      aria-describedby={errors.message ? 'lead-message-error' : undefined}
                       placeholder="Explique o contexto atual, o problema, o objetivo e o prazo desejado."
                       rows={6}
                       className={cn('field-shell resize-none font-inter text-sm', errors.message && 'border-red-400')}
@@ -424,21 +445,23 @@ export function ContactLeadPage({
 }
 
 function Field({
+  fieldId,
   label,
   error,
   children,
 }: {
+  fieldId: string
   label: string
   error?: string
   children: React.ReactNode
 }) {
   return (
     <div>
-      <label className="mb-2 block font-inter text-xs uppercase tracking-[0.15em] text-slate-600">
+      <label htmlFor={fieldId} className="mb-2 block font-inter text-xs uppercase tracking-[0.15em] text-slate-600">
         {label}
       </label>
       {children}
-      {error ? <p className="mt-1 text-xs text-red-500">{error}</p> : null}
+      {error ? <p id={`${fieldId}-error`} className="mt-1 text-xs text-red-500">{error}</p> : null}
     </div>
   )
 }
