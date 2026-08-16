@@ -1,12 +1,14 @@
 import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import { ContactLeadPage } from '@/components/sections/contact-lead-page'
+import { createPageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: 'Agendar Reunião Técnica | Arcane Tecnologia',
   description:
     'Agende uma reunião técnica para diagnosticar seu desafio, alinhar escopo e definir os próximos passos com a Arcane.',
-}
+  path: '/agendar-reuniao',
+})
 
 export default function ScheduleMeetingPage() {
   return (

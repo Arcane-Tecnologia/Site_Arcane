@@ -3,6 +3,14 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { mergePublishedPageContent } from '@/lib/page-content'
 import { serviceProcessSteps, services } from '@/lib/site-content/services'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Serviços de Engenharia, Automação e IA | Arcane Tecnologia',
+  description:
+    'Conheça as linhas de serviço da Arcane para operação crítica, produtos digitais, comércio, IA aplicada, hardware e posicionamento premium.',
+  path: '/services',
+})
 
 const decisionSignals = [
   'Se a operação já sente o custo do improviso técnico',
@@ -40,7 +48,7 @@ export default async function ServicesPage() {
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pb-14 pt-32 lg:pb-[4.5rem] lg:pt-40">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.16),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.16),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.92fr] lg:items-end">
             <div className="max-w-4xl">
@@ -60,7 +68,7 @@ export default async function ServicesPage() {
               <div className="mt-4 space-y-4">
                 {decisionSignals.map((signal) => (
                   <div key={signal} className="flex items-start gap-3">
-                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brand-cyan shadow-[0_0_24px_rgba(103,227,247,0.64)]" />
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brand-cyan shadow-[0_0_24px_rgba(201,129,93,0.64)]" />
                     <p className="font-inter text-sm leading-relaxed text-slate-300">{signal}</p>
                   </div>
                 ))}
@@ -77,7 +85,7 @@ export default async function ServicesPage() {
               <article key={service.slug}>
                 <Link
                   href={`/services/${service.slug}`}
-                  className="group panel-shell flex h-full flex-col overflow-hidden rounded-[1.95rem] p-4 transition-all hover:-translate-y-1 hover:border-brand-cyan/35 hover:shadow-[0_34px_88px_-48px_rgba(7,17,31,0.24)]"
+                  className="group panel-shell flex h-full flex-col overflow-hidden rounded-[1.95rem] p-4 transition-all hover:-translate-y-1 hover:border-brand-cyan/35 hover:shadow-[0_34px_88px_-48px_rgba(43,33,27,0.24)]"
                 >
                   <div className="relative overflow-hidden rounded-[1.4rem] border border-white/60">
                     <div className="absolute left-4 top-4 z-10 rounded-full border border-white/65 bg-white/82 px-3 py-1 font-inter text-[10px] uppercase tracking-[0.18em] text-slate-600 backdrop-blur-md">
@@ -90,7 +98,7 @@ export default async function ServicesPage() {
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.08)_0%,rgba(7,17,31,0.5)_100%)]" />
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.08)_0%,rgba(43,33,27,0.5)_100%)]" />
                     </div>
                   </div>
 
@@ -167,7 +175,7 @@ export default async function ServicesPage() {
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/agendar-reuniao"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-950 shadow-[0_24px_60px_-30px_rgba(37,210,238,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(168,93,58,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
             >
               Agendar reunião técnica
               <ArrowRight size={14} />

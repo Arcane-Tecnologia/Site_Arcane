@@ -9,9 +9,28 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { projects, projectsBySlug } from '@/lib/site-content/projects'
+import type { Metadata } from 'next'
+import { createPageMetadata } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params
+  const project = projectsBySlug[slug]
+
+  if (!project) {
+    return { title: 'Projeto não encontrado | Arcane Tecnologia' }
+  }
+
+  return createPageMetadata({
+    title: `${project.title} | Arcane Tecnologia`,
+    description: project.excerpt,
+    path: `/projects/${project.slug}`,
+    image: project.coverImage,
+    type: 'article',
+  })
 }
 
 export default async function ProjectDetailPage({ params }: PageProps) {
@@ -38,8 +57,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             className="object-cover"
             style={{ objectPosition: project.coverPosition ?? 'center center' }}
           />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.28)_0%,rgba(2,6,23,0.72)_44%,rgba(2,6,23,0.96)_100%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.22),transparent_24%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(25,22,19,0.28)_0%,rgba(25,22,19,0.72)_44%,rgba(25,22,19,0.96)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.22),transparent_24%)]" />
         </div>
 
         <div className="relative z-10 container mx-auto px-6 pb-14 lg:px-12 lg:pb-[4.5rem]">
@@ -123,7 +142,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.stack.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-slate-200 bg-slate-950 px-3 py-1.5 font-inter text-[11px] uppercase tracking-[0.08em] text-cyan-100"
+                    className="rounded-full border border-slate-200 bg-[#191613] px-3 py-1.5 font-inter text-[11px] uppercase tracking-[0.08em] text-brand-sand"
                   >
                     {item}
                   </span>
@@ -160,7 +179,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <div className="mt-5 flex flex-col gap-3">
                 <Link
                   href="/agendar-reuniao"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-6 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-6 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
                 >
                   Agendar reunião técnica
                   <ArrowRight size={14} />

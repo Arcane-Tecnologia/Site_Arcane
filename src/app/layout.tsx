@@ -9,11 +9,38 @@ import "./globals.css"
 import { cormorant, inter, playfair } from "@/lib/fonts"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { siteConfig } from "@/lib/site-config"
+import { absoluteUrl, createPageMetadata, siteUrl } from "@/lib/seo"
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: siteConfig.brand.name,
+      url: siteUrl,
+      logo: absoluteUrl('/images/logo-arcane.webp'),
+      email: siteConfig.contact.email,
+      sameAs: [siteConfig.links.linkedin],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: siteConfig.brand.name,
+      url: siteUrl,
+      publisher: { '@id': `${siteUrl}/#organization` },
+      inLanguage: 'pt-BR',
+    },
+  ],
+}
 
 export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: siteConfig.seo.title,
+    description: siteConfig.seo.description,
+    path: '/',
+  }),
   metadataBase: new URL("https://arcane.tech"),
-  title: siteConfig.seo.title,
-  description: siteConfig.seo.description,
   keywords: [
     "desenvolvimento de sistemas",
     "automacao de processos",
@@ -23,26 +50,6 @@ export const metadata: Metadata = {
     "transformacao digital",
   ],
   authors: [{ name: siteConfig.brand.name }],
-  openGraph: {
-    title: siteConfig.seo.title,
-    description: siteConfig.seo.description,
-    type: "website",
-    locale: "pt_BR",
-    images: [
-      {
-        url: siteConfig.seo.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.brand.name,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.seo.title,
-    description: siteConfig.seo.description,
-    images: [siteConfig.seo.ogImage],
-  },
 }
 
 export default function RootLayout({
@@ -51,10 +58,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="pt-BR" className="scroll-smooth" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body
         className={`${cormorant.variable} ${inter.variable} ${playfair.variable} overflow-x-hidden font-inter antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

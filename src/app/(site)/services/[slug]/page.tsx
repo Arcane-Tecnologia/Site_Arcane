@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react'
 import { services, servicesBySlug } from '@/lib/site-content/services'
+import { createPageMetadata } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -31,10 +32,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
-  return {
+  return createPageMetadata({
     title: `${service.title} | Arcane Tecnologia`,
     description: service.excerpt,
-  }
+    path: `/services/${service.slug}`,
+    image: service.image,
+  })
 }
 
 export default async function ServiceDetailPage({ params }: PageProps) {
@@ -103,7 +106,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.08)_0%,rgba(7,17,31,0.52)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.08)_0%,rgba(43,33,27,0.52)_100%)]" />
                 </div>
               </div>
 
@@ -234,7 +237,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href={service.cta.primaryHref}
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-950 shadow-[0_24px_60px_-30px_rgba(37,210,238,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(168,93,58,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
             >
               {service.cta.primaryLabel}
               <ArrowRight size={14} />

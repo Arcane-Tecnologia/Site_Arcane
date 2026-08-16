@@ -27,12 +27,15 @@ export function FloatingChat({ action = defaultConversionCtas.whatsapp }: Floati
   return (
     <>
       <motion.button
+        type="button"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1, type: 'spring', stiffness: 220 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-white/12 bg-[linear-gradient(135deg,#07111f_0%,#0d1a2a_52%,#0b748f_140%)] text-brand-cyan shadow-[0_26px_70px_-24px_rgba(7,17,31,0.52)] transition-all hover:-translate-y-0.5 hover:shadow-[0_32px_80px_-24px_rgba(7,17,31,0.64)]"
-        aria-label="Abrir conversa"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-brand-terracotta/40 bg-[linear-gradient(135deg,#2b211b_0%,#403128_52%,#7f4228_140%)] text-brand-terracotta shadow-[0_26px_70px_-24px_rgba(43,33,27,0.58)] transition-all hover:-translate-y-0.5 hover:shadow-[0_32px_80px_-24px_rgba(168,93,58,0.42)]"
+        aria-label={isOpen ? 'Fechar conversa' : 'Abrir conversa'}
+        aria-expanded={isOpen}
+        aria-controls="floating-chat-panel"
       >
         <AnimatePresence mode="wait">
           {isOpen ? (
@@ -66,13 +69,16 @@ export function FloatingChat({ action = defaultConversionCtas.whatsapp }: Floati
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            id="floating-chat-panel"
+            role="dialog"
+            aria-label="Atendimento comercial"
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 z-50 w-[22rem] overflow-hidden rounded-[1.75rem] border border-white/12 bg-slate-950 shadow-[0_40px_90px_-40px_rgba(0,0,0,0.68)]"
+            className="fixed bottom-24 right-6 z-50 w-[22rem] overflow-hidden rounded-[1.75rem] border border-brand-terracotta/20 bg-[#191613] shadow-[0_40px_90px_-40px_rgba(25,22,19,0.78)]"
           >
-            <div className="bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.24),transparent_32%),linear-gradient(135deg,#07111f_0%,#0d1a2a_56%,#0b748f_150%)] px-5 py-4">
+            <div className="bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.24),transparent_32%),linear-gradient(135deg,#191613_0%,#2b211b_56%,#7f4228_150%)] px-5 py-4">
               <div className="flex items-start gap-3">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/10">
                   <FaWhatsapp size={22} className="text-white" />
@@ -90,7 +96,7 @@ export function FloatingChat({ action = defaultConversionCtas.whatsapp }: Floati
               </div>
             </div>
 
-            <div className="bg-slate-950 p-5">
+            <div className="bg-[#191613] p-5">
               <div className="rounded-[1.35rem] border border-white/10 bg-white/[0.04] p-4 backdrop-blur-md">
                 <p className="font-inter text-sm leading-relaxed text-slate-200">
                   {isWhatsAppAction
@@ -107,7 +113,7 @@ export function FloatingChat({ action = defaultConversionCtas.whatsapp }: Floati
                   href={action.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-cyan/70 bg-[linear-gradient(135deg,#67e3f7_0%,#25d2ee_58%,#0d8fab_150%)] px-4 py-3 font-inter text-sm font-semibold text-slate-950 shadow-[0_22px_52px_-28px_rgba(37,210,238,0.7)] transition-all hover:-translate-y-0.5 hover:text-slate-950"
+                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-terracotta/70 bg-[linear-gradient(135deg,#e1a17e_0%,#c9815d_58%,#7f4228_150%)] px-4 py-3 font-inter text-sm font-semibold text-white shadow-[0_22px_52px_-28px_rgba(168,93,58,0.5)] transition-all hover:-translate-y-0.5 hover:text-white"
                 >
                   <FaWhatsapp size={18} />
                   {action.label}
@@ -116,7 +122,7 @@ export function FloatingChat({ action = defaultConversionCtas.whatsapp }: Floati
               ) : (
                 <Link
                   href={action.href}
-                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-cyan/70 bg-[linear-gradient(135deg,#67e3f7_0%,#25d2ee_58%,#0d8fab_150%)] px-4 py-3 font-inter text-sm font-semibold text-slate-950 shadow-[0_22px_52px_-28px_rgba(37,210,238,0.7)] transition-all hover:-translate-y-0.5 hover:text-slate-950"
+                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-terracotta/70 bg-[linear-gradient(135deg,#e1a17e_0%,#c9815d_58%,#7f4228_150%)] px-4 py-3 font-inter text-sm font-semibold text-white shadow-[0_22px_52px_-28px_rgba(168,93,58,0.5)] transition-all hover:-translate-y-0.5 hover:text-white"
                 >
                   <FaWhatsapp size={18} />
                   {action.label}

@@ -77,7 +77,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           style={{ objectPosition: project.coverPosition ?? 'center center' }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.08)_0%,rgba(2,6,23,0.78)_60%,rgba(2,6,23,0.96)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(25,22,19,0.08)_0%,rgba(25,22,19,0.78)_60%,rgba(25,22,19,0.96)_100%)]" />
       </div>
 
       <div className="relative z-10 flex h-full flex-col justify-end p-5 lg:p-6">

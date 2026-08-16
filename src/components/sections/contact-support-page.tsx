@@ -115,7 +115,7 @@ export function ContactSupportPage() {
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pt-28 pb-10 lg:pt-36 lg:pb-14">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,227,247,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-end">
             <motion.div
@@ -146,7 +146,7 @@ export function ContactSupportPage() {
               <div className="mt-4 space-y-4">
                 {supportSignals.map((signal) => (
                   <div key={signal} className="flex items-start gap-3">
-                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brand-cyan shadow-[0_0_24px_rgba(103,227,247,0.64)]" />
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brand-cyan shadow-[0_0_24px_rgba(201,129,93,0.64)]" />
                     <p className="font-inter text-sm leading-relaxed text-slate-300">{signal}</p>
                   </div>
                 ))}
@@ -257,16 +257,22 @@ export function ContactSupportPage() {
                   )}
 
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                    <Field label="Nome *" error={errors.name?.message}>
+                    <Field fieldId="support-name" label="Nome *" error={errors.name?.message}>
                       <Input
                         {...register('name')}
+                        id="support-name"
+                        aria-invalid={Boolean(errors.name)}
+                        aria-describedby={errors.name ? 'support-name-error' : undefined}
                         placeholder="Seu nome"
                         className={cn('field-shell font-inter text-sm', errors.name && 'border-red-400')}
                       />
                     </Field>
-                    <Field label="E-mail *" error={errors.email?.message}>
+                    <Field fieldId="support-email" label="E-mail *" error={errors.email?.message}>
                       <Input
                         {...register('email')}
+                        id="support-email"
+                        aria-invalid={Boolean(errors.email)}
+                        aria-describedby={errors.email ? 'support-email-error' : undefined}
                         type="email"
                         placeholder="voce@empresa.com"
                         className={cn('field-shell font-inter text-sm', errors.email && 'border-red-400')}
@@ -275,25 +281,32 @@ export function ContactSupportPage() {
                   </div>
 
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                    <Field label="WhatsApp">
+                    <Field fieldId="support-phone" label="WhatsApp">
                       <Input
                         {...register('phone')}
+                        id="support-phone"
                         placeholder="Seu WhatsApp com DDD"
                         className="field-shell font-inter text-sm"
                       />
                     </Field>
-                    <Field label="Assunto *" error={errors.subject?.message}>
+                    <Field fieldId="support-subject" label="Assunto *" error={errors.subject?.message}>
                       <Input
                         {...register('subject')}
+                        id="support-subject"
+                        aria-invalid={Boolean(errors.subject)}
+                        aria-describedby={errors.subject ? 'support-subject-error' : undefined}
                         placeholder="Ex.: suporte, parceria, dúvida"
                         className={cn('field-shell font-inter text-sm', errors.subject && 'border-red-400')}
                       />
                     </Field>
                   </div>
 
-                  <Field label="Mensagem *" error={errors.message?.message}>
+                  <Field fieldId="support-message" label="Mensagem *" error={errors.message?.message}>
                     <Textarea
                       {...register('message')}
+                      id="support-message"
+                      aria-invalid={Boolean(errors.message)}
+                      aria-describedby={errors.message ? 'support-message-error' : undefined}
                       placeholder="Descreva sua dúvida ou solicitação."
                       rows={6}
                       className={cn('field-shell resize-none font-inter text-sm', errors.message && 'border-red-400')}
@@ -332,21 +345,23 @@ export function ContactSupportPage() {
 }
 
 function Field({
+  fieldId,
   label,
   error,
   children,
 }: {
+  fieldId: string
   label: string
   error?: string
   children: React.ReactNode
 }) {
   return (
     <div>
-      <label className="mb-2 block font-inter text-xs uppercase tracking-[0.15em] text-slate-600">
+      <label htmlFor={fieldId} className="mb-2 block font-inter text-xs uppercase tracking-[0.15em] text-slate-600">
         {label}
       </label>
       {children}
-      {error ? <p className="mt-1 text-xs text-red-500">{error}</p> : null}
+      {error ? <p id={`${fieldId}-error`} className="mt-1 text-xs text-red-500">{error}</p> : null}
     </div>
   )
 }

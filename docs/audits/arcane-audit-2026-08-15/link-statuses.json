@@ -1,0 +1,186 @@
+{
+  "linkStatuses": [
+    {
+      "href": "http://localhost:3000/",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/services",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/about",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/contact",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/solicitar-orcamento",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/services/sistemas-web-personalizados",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/services/ia-automacoes-comerciais",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/services/sites-premium",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/automacao-ollama-n8n-evolution",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/plataforma-fintech-ledger-imutavel",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/privacy",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/terms",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/cookies",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/agendar-reuniao",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/services/sistemas-exclusivos",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/services/e-commerce",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/services/automacao-integracoes-hardware",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/bot-trading-spot-gestao-risco",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/entrevistas-ia-whatsapp",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/otimizacao-anuncios-marketplace",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/cadencia-emails-auditoria",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/etiquetas-eletronicas-atualizacao-massiva",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/gestao-acao-social-lgpd",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/saas-gestao-personal-trainers",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "href": "http://localhost:3000/projects/automacao-ollama-n8n-evolution#visao-geral",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "techChecks": [
+    {
+      "path": "/robots.txt",
+      "status": 404,
+      "ok": false,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 404,
+      "ok": false,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/x-icon"
+    },
+    {
+      "path": "/og-arcane.svg",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/svg+xml"
+    }
+  ]
+}
