@@ -8,7 +8,7 @@ export const siteConfig = {
   },
   contact: {
     email: 'contato@arcane.tech',
-    salesEmail: 'comercial@arcane.tech',
+    salesEmail: 'comercial@arcanetecnologia.com.br',
     privacyEmail: 'privacy@arcane.tech',
     phoneDisplay: '(12) 99133-2258',
     phoneE164: '5512991332258',
