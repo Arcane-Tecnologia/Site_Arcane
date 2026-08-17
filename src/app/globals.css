@@ -202,10 +202,7 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
   }
 
   body {
-    background:
-      radial-gradient(circle at top left, rgba(183, 121, 86, 0.14), transparent 24%),
-      radial-gradient(circle at top right, rgba(96, 72, 61, 0.08), transparent 22%),
-      linear-gradient(180deg, #fffaf4 0%, var(--surface-page) 24%, #e1cbb8 100%);
+    background: #f7f2eb;
     @apply bg-background text-foreground;
   }
 
@@ -219,7 +216,7 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
       linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px);
     background-size: 120px 120px;
     mask-image: radial-gradient(circle at center, black 32%, transparent 82%);
-    opacity: 0.22;
+    opacity: 0.13;
     z-index: -1;
   }
 
@@ -258,22 +255,41 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
 @layer utilities {
   .section-shell {
-    background:
-      radial-gradient(circle at top right, rgba(183, 121, 86, 0.08), transparent 24%),
-      linear-gradient(180deg, rgba(255, 250, 244, 0.94) 0%, rgba(245, 236, 226, 0.94) 100%);
+    background: linear-gradient(180deg, #fffaf4 0%, #f7f2eb 100%);
   }
 
   .section-shell-alt {
-    background:
-      radial-gradient(circle at top left, rgba(183, 121, 86, 0.09), transparent 22%),
-      linear-gradient(180deg, rgba(239, 225, 211, 0.94) 0%, rgba(225, 203, 184, 0.92) 100%);
+    background: #efe6dc;
   }
 
   .section-shell-dark {
     background:
-      radial-gradient(circle at top left, rgba(183, 121, 86, 0.2), transparent 22%),
-      radial-gradient(circle at 85% 15%, rgba(210, 155, 124, 0.1), transparent 16%),
-      linear-gradient(155deg, var(--surface-dark) 0%, var(--surface-dark-elevated) 52%, var(--surface-dark-strong) 100%);
+      linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      #21150f;
+    background-size: 88px 88px, 88px 88px, auto;
+  }
+
+  .architectural-surface {
+    background:
+      linear-gradient(rgba(117, 78, 55, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(117, 78, 55, 0.055) 1px, transparent 1px),
+      linear-gradient(180deg, #fffaf4 0%, #f7f2eb 100%);
+    background-size: 88px 88px, 88px 88px, auto;
+  }
+
+  .architectural-dark-surface {
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      #21150f;
+    background-size: 88px 88px, 88px 88px, auto;
+  }
+
+  .architectural-panel-dark {
+    background: linear-gradient(135deg, rgba(69, 43, 31, 0.96), rgba(33, 21, 15, 0.98));
+    border: 1px solid rgba(193, 138, 103, 0.34);
+    box-shadow: 0 30px 70px -48px rgba(0, 0, 0, 0.86);
   }
 
   .hero-overlay {

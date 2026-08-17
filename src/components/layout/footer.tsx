@@ -30,18 +30,18 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="section-shell-dark premium-grid text-brand-ivory">
+    <footer className="architectural-dark-surface premium-grid text-brand-ivory">
       <div className="container mx-auto px-6 pb-10 pt-16 lg:px-12 lg:pb-12 lg:pt-[4.5rem]">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.55 }}
-          className="panel-shell-dark halo-cyan overflow-hidden rounded-[2rem] p-7 lg:p-9"
+          className="architectural-panel-dark overflow-hidden rounded-sm p-7 lg:p-9"
         >
           <div className="grid gap-8 lg:grid-cols-[1.3fr_0.9fr] lg:items-end">
             <div>
-              <span className="section-kicker">Pronto para a próxima camada</span>
+              <span className="section-kicker text-[#d49b73]">Pronto para a próxima camada</span>
               <h2 className="mt-5 max-w-3xl font-cormorant text-[2rem] leading-[1.02] text-white lg:text-[3.35rem]">
                 Estruture tecnologia com rigor executivo, sem abrir mão de velocidade.
               </h2>
@@ -53,11 +53,11 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
 
             <div className="space-y-4 lg:pl-6">
               <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-[1.35rem] border border-white/10 bg-white/6 p-4 backdrop-blur-md">
+                <div className="rounded-sm border border-white/10 bg-white/6 p-4 backdrop-blur-md">
                   <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">Foco</p>
                   <p className="mt-2 font-cormorant text-2xl text-white">Operação crítica</p>
                 </div>
-                <div className="rounded-[1.35rem] border border-white/10 bg-white/6 p-4 backdrop-blur-md">
+                <div className="rounded-sm border border-white/10 bg-white/6 p-4 backdrop-blur-md">
                   <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">Entrega</p>
                   <p className="mt-2 font-cormorant text-2xl text-white">Arquitetura autoral</p>
                 </div>
