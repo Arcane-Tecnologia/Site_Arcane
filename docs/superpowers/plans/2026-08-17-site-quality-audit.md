@@ -22,3 +22,7 @@
 3. Acessibilidade, semântica e responsividade.
 4. Headers de segurança e índice para leads.
 5. Verificação final, documentação de resultados e push.
+
+## Execução registrada
+
+As etapas foram executadas com commits separados por categoria. A verificação final inclui lint, typecheck, auditoria de regressões, build frontend-only, headers do servidor local, Core Web Vitals, axe, rotas do sitemap, 404, redirecionamento 308, imagens e viewport mobile.
