@@ -199,7 +199,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="#visao-geral"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-6 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan-strong bg-brand-cyan-strong px-6 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-graphite hover:text-white"
                 >
                   Ver detalhes do projeto
                   <ArrowRight size={14} />

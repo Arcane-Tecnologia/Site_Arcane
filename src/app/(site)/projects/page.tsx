@@ -134,7 +134,7 @@ export default async function ProjectsPage() {
           </p>
           <Link
             href={content.projects_cta_url}
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan-strong bg-brand-cyan-strong px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white transition-all hover:-translate-y-0.5 hover:bg-brand-graphite hover:text-white"
           >
             {content.projects_cta_button}
             <ArrowRight size={14} />

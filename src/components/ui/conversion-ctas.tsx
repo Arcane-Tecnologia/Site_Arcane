@@ -64,8 +64,8 @@ export function ConversionCTAs({
     'inline-flex items-center justify-center gap-2 rounded-full border font-inter font-semibold uppercase transition-all duration-300',
     baseClasses,
     surface === 'light'
-      ? 'border-brand-cyan bg-brand-cyan text-white shadow-[0_22px_56px_-26px_rgba(183,121,86,0.42)] hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:border-brand-cyan-strong hover:text-white'
-      : 'border-brand-terracotta/70 bg-[linear-gradient(135deg,#d29b7c_0%,#b77956_58%,#8e5c44_150%)] text-white shadow-[0_24px_66px_-28px_rgba(183,121,86,0.5)] hover:-translate-y-0.5 hover:shadow-[0_30px_74px_-28px_rgba(183,121,86,0.64)]'
+      ? 'border-brand-cyan-strong bg-brand-cyan-strong text-white shadow-[0_22px_56px_-26px_rgba(183,121,86,0.42)] hover:-translate-y-0.5 hover:bg-brand-graphite hover:border-brand-graphite hover:text-white'
+      : 'border-brand-terracotta/70 bg-[linear-gradient(135deg,#8e5c44_0%,#60483d_58%,#3f2d27_150%)] text-white shadow-[0_24px_66px_-28px_rgba(183,121,86,0.5)] hover:-translate-y-0.5 hover:shadow-[0_30px_74px_-28px_rgba(183,121,86,0.64)]'
   )
 
   const secondaryClasses = cn(

@@ -113,7 +113,7 @@ export function FloatingChat({ action = defaultConversionCtas.whatsapp }: Floati
                   href={action.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-terracotta/70 bg-[linear-gradient(135deg,#d29b7c_0%,#b77956_58%,#8e5c44_150%)] px-4 py-3 font-inter text-sm font-semibold text-white shadow-[0_22px_52px_-28px_rgba(183,121,86,0.5)] transition-all hover:-translate-y-0.5 hover:text-white"
+                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-terracotta/70 bg-[linear-gradient(135deg,#8e5c44_0%,#60483d_58%,#3f2d27_150%)] px-4 py-3 font-inter text-sm font-semibold text-white shadow-[0_22px_52px_-28px_rgba(183,121,86,0.5)] transition-all hover:-translate-y-0.5 hover:text-white"
                 >
                   <FaWhatsapp size={18} />
                   {action.label}
@@ -122,7 +122,7 @@ export function FloatingChat({ action = defaultConversionCtas.whatsapp }: Floati
               ) : (
                 <Link
                   href={action.href}
-                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-terracotta/70 bg-[linear-gradient(135deg,#d29b7c_0%,#b77956_58%,#8e5c44_150%)] px-4 py-3 font-inter text-sm font-semibold text-white shadow-[0_22px_52px_-28px_rgba(183,121,86,0.5)] transition-all hover:-translate-y-0.5 hover:text-white"
+                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-brand-terracotta/70 bg-[linear-gradient(135deg,#8e5c44_0%,#60483d_58%,#3f2d27_150%)] px-4 py-3 font-inter text-sm font-semibold text-white shadow-[0_22px_52px_-28px_rgba(183,121,86,0.5)] transition-all hover:-translate-y-0.5 hover:text-white"
                 >
                   <FaWhatsapp size={18} />
                   {action.label}

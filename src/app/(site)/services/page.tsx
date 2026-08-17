@@ -176,7 +176,7 @@ export default async function ServicesPage() {
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/agendar-reuniao"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(183,121,86,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan-strong bg-brand-cyan-strong px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(183,121,86,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-graphite hover:text-white"
             >
               Agendar reunião técnica
               <ArrowRight size={14} />

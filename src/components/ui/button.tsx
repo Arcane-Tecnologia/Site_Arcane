@@ -16,7 +16,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "border border-brand-cyan bg-brand-cyan text-white shadow-[0_24px_60px_-28px_rgba(183,121,86,0.42)] hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:border-brand-cyan-strong hover:text-white",
+          "border border-brand-cyan-strong bg-brand-cyan-strong text-white shadow-[0_24px_60px_-28px_rgba(183,121,86,0.42)] hover:-translate-y-0.5 hover:bg-brand-graphite hover:border-brand-graphite hover:text-white",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
@@ -27,7 +27,7 @@ const buttonVariants = cva(
           "text-[#4f3d32] hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
         premium:
-          "border border-brand-terracotta/70 bg-[linear-gradient(135deg,#e3b398_0%,#d29b7c_55%,#8e5c44_140%)] text-white shadow-[0_28px_70px_-30px_rgba(183,121,86,0.5)] hover:-translate-y-0.5 hover:shadow-[0_34px_78px_-28px_rgba(183,121,86,0.64)]",
+          "border border-brand-terracotta/70 bg-[linear-gradient(135deg,#8e5c44_0%,#60483d_55%,#3f2d27_140%)] text-white shadow-[0_28px_70px_-30px_rgba(183,121,86,0.5)] hover:-translate-y-0.5 hover:shadow-[0_34px_78px_-28px_rgba(183,121,86,0.64)]",
         "premium-secondary":
           "border border-white/14 bg-white/8 text-white shadow-[0_24px_70px_-44px_rgba(0,0,0,0.62)] backdrop-blur-md hover:-translate-y-0.5 hover:border-brand-cyan/55 hover:bg-white/12 hover:text-brand-ice",
       },

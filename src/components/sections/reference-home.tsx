@@ -67,11 +67,9 @@ function ReferenceHero({
 }) {
   return (
     <section className="relative overflow-hidden border-b border-[#d9c8b7] bg-[#fffaf4] pt-28 lg:pt-32">
-      <div className="pointer-events-none absolute inset-0 opacity-60 [background-image:linear-gradient(rgba(183,121,86,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(183,121,86,0.06)_1px,transparent_1px)] [background-size:72px_72px] [mask-image:linear-gradient(to_bottom,black,transparent_75%)]" />
-
       <div className="container relative mx-auto grid items-center gap-10 px-6 pb-10 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-7 md:pb-10 lg:gap-10 lg:px-12 lg:pb-16">
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65 }}
           className="relative z-10 max-w-2xl md:pb-5"
@@ -97,7 +95,7 @@ function ReferenceHero({
             </a>
             <Link
               href="/projects"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-[#c9ad96] bg-[#fffaf4] px-5 font-inter text-[11px] font-semibold uppercase tracking-[0.13em] text-[#8e5c44] transition-all hover:-translate-y-0.5 hover:border-[#b77956]"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-[#8e5c44] bg-[#fffaf4] px-5 font-inter text-[11px] font-semibold uppercase tracking-[0.13em] text-[#8e5c44] transition-all hover:-translate-y-0.5 hover:border-[#60483d]"
             >
               Explorar cases
               <ArrowRight size={15} />
@@ -106,7 +104,7 @@ function ReferenceHero({
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 24 }}
+          initial={false}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.75, delay: 0.08 }}
           className="relative min-h-[22rem] overflow-hidden rounded-[1.5rem] border border-[#c9ad96] bg-[#60483d] shadow-[0_30px_80px_-42px_rgba(63,45,39,0.55)] sm:min-h-[28rem] md:min-h-[20rem] lg:min-h-[31rem]"
@@ -241,7 +239,7 @@ function CasesSection() {
         <div className="mt-8 flex justify-center">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 rounded-md border border-[#c9ad96] bg-[#fffaf4] px-5 py-3 font-inter text-[10px] font-semibold uppercase tracking-[0.14em] text-[#8e5c44] transition-colors hover:border-[#b77956]"
+            className="inline-flex items-center gap-2 rounded-md border border-[#8e5c44] bg-[#fffaf4] px-5 py-3 font-inter text-[10px] font-semibold uppercase tracking-[0.14em] text-[#8e5c44] transition-colors hover:border-[#60483d]"
           >
             Ver todos os cases
             <ArrowRight size={14} />
