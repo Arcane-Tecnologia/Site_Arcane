@@ -221,6 +221,7 @@ export default function AutomacaoOllamaN8nEvolutionPage() {
                   alt="Ambiente técnico moderno com monitor, dashboard e fluxos de automação integrados."
                   fill
                   priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.08)_0%,rgba(63,45,39,0.52)_100%)]" />

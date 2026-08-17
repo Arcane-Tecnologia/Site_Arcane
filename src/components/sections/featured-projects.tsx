@@ -74,6 +74,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           src={project.coverImage}
           alt={project.coverAlt}
           fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           style={{ objectPosition: project.coverPosition ?? 'center center' }}
         />

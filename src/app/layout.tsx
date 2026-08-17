@@ -6,7 +6,7 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
 import type { Metadata } from "next"
 import "./globals.css"
-import { cormorant, inter, playfair } from "@/lib/fonts"
+import { cormorant, inter } from "@/lib/fonts"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { siteConfig } from "@/lib/site-config"
 import { absoluteUrl, createPageMetadata, siteUrl } from "@/lib/seo"
@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body
-        className={`${cormorant.variable} ${inter.variable} ${playfair.variable} overflow-x-hidden font-inter antialiased`}
+        className={`${cormorant.variable} ${inter.variable} overflow-x-hidden font-inter antialiased`}
       >
         <script
           type="application/ld+json"

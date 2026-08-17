@@ -54,6 +54,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             alt={project.coverAlt}
             fill
             priority
+            sizes="100vw"
             className="object-cover"
             style={{ objectPosition: project.coverPosition ?? 'center center' }}
           />

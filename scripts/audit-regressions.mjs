@@ -21,6 +21,9 @@ assert.equal(await exists('./src/app/sitemap.ts'), true, 'sitemap.ts deve existi
 
 const rootLayout = await source('./src/app/layout.tsx')
 const globals = await source('./src/app/globals.css')
+const nextConfig = await source('./next.config.ts')
+const fonts = await source('./src/lib/fonts.ts')
+const sitemap = await source('./src/app/sitemap.ts')
 const chat = await source('./src/components/ui/floating-chat.tsx')
 const gdpr = await source('./src/components/ui/gdpr-banner.tsx')
 const leadForm = await source('./src/components/sections/contact-lead-page.tsx')
@@ -31,6 +34,12 @@ const ollamaCase = await source('./src/app/(site)/projects/automacao-ollama-n8n-
 
 assert.match(rootLayout, /createPageMetadata/, 'layout deve usar metadata com canonical')
 assert.match(rootLayout, /application\/ld\+json/, 'layout deve publicar dados estruturados')
+assert.doesNotMatch(nextConfig, /unoptimized:\s*true/, 'imagens devem usar o otimizador do Next')
+assert.match(nextConfig, /formats:\s*\[\s*['"]image\/avif['"],\s*['"]image\/webp['"]\s*\]/, 'imagens devem negociar formatos modernos')
+assert.match(nextConfig, /source:\s*['"]\/images\/\:path\*['"]/, 'imagens públicas devem ter política de cache explícita')
+assert.match(fonts, /Cormorant_Garamond\(\{[\s\S]*weight:\s*\[['"]400['"],\s*['"]500['"],\s*['"]600['"],\s*['"]700['"]\]/, 'Cormorant deve carregar apenas pesos usados')
+assert.doesNotMatch(fonts, /Playfair_Display/, 'fonte não utilizada não deve ser carregada')
+assert.match(sitemap, /contentLastModified/, 'sitemap deve usar a data de conteúdo centralizada')
 assert.match(projectDetail, /generateMetadata/, 'cases dinâmicos devem ter metadata própria')
 assert.match(globals, /--brand-clay:\s*#b77956/i, 'tokens terrosos devem existir')
 assert.match(chat, /aria-expanded=\{isOpen\}/, 'chat deve expor aria-expanded')

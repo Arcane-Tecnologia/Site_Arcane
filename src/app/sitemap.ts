@@ -1,9 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { absoluteUrl } from '@/lib/seo'
+import { contentLastModified } from '@/lib/site-content/metadata'
 import { projects } from '@/lib/site-content/projects'
 import { services } from '@/lib/site-content/services'
-
-const lastModified = new Date('2026-08-15T00:00:00-03:00')
 
 const staticRoutes = [
   { path: '/', priority: 1, changeFrequency: 'weekly' as const },
@@ -42,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
     .map((route) => ({
       url: absoluteUrl(route.path),
-      lastModified,
+      lastModified: contentLastModified,
       changeFrequency: route.changeFrequency,
       priority: route.priority,
     }))

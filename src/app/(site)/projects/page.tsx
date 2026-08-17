@@ -59,6 +59,7 @@ export default async function ProjectsPage() {
                   src={leadingProject.coverImage}
                   alt={leadingProject.coverAlt}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                   style={{ objectPosition: leadingProject.coverPosition ?? 'center center' }}
                 />
@@ -155,6 +156,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           src={project.coverImage}
           alt={project.coverAlt}
           fill
+          sizes="(max-width: 1024px) 100vw, 55vw"
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           style={{ objectPosition: project.coverPosition ?? 'center center' }}
         />

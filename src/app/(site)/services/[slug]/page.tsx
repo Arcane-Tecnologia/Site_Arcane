@@ -103,6 +103,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     src={service.image}
                     alt={service.title}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 48vw"
                     className="object-cover"
                     priority
                   />

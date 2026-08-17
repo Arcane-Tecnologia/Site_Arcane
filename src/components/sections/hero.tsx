@@ -39,6 +39,7 @@ export function Hero({
           alt="Equipe acompanhando dashboards e sistemas em ambiente corporativo"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
       </div>

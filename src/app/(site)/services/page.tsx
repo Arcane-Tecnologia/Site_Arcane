@@ -96,6 +96,7 @@ export default async function ServicesPage() {
                         src={service.image}
                         alt={service.title}
                         fill
+                        sizes="(max-width: 1024px) 100vw, 33vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.08)_0%,rgba(63,45,39,0.5)_100%)]" />
