@@ -100,15 +100,15 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.06 }}
           >
-            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory/86">
+            <h3 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory">
               Navegação
-            </h4>
+            </h3>
             <nav className="mt-4 flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="group inline-flex items-center gap-2 font-inter text-sm text-brand-sand/72 transition-colors hover:text-brand-cyan"
+                  className="group inline-flex items-center gap-2 font-inter text-sm text-brand-sand transition-colors hover:text-brand-cyan"
                 >
                   {link.label}
                   <ArrowUpRight size={13} className="opacity-0 transition-opacity group-hover:opacity-100" />
@@ -123,13 +123,13 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.12 }}
           >
-            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory/86">
+            <h3 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory">
               Contato
-            </h4>
+            </h3>
             <div className="mt-4 flex flex-col gap-4">
               <a
                 href={`mailto:${siteConfig.contact.email}`}
-                className="flex items-start gap-3 font-inter text-sm text-brand-sand/82 transition-colors hover:text-brand-cyan"
+                className="flex items-start gap-3 font-inter text-sm text-brand-sand transition-colors hover:text-brand-cyan"
               >
                 <Mail size={16} className="mt-0.5 shrink-0" />
                 <span>{siteConfig.contact.email}</span>
@@ -137,13 +137,13 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
               {siteConfig.contact.phoneDisplay && siteConfig.contact.phoneE164 ? (
                 <a
                   href={`tel:+${siteConfig.contact.phoneE164}`}
-                  className="flex items-start gap-3 font-inter text-sm text-brand-sand/82 transition-colors hover:text-brand-cyan"
+                  className="flex items-start gap-3 font-inter text-sm text-brand-sand transition-colors hover:text-brand-cyan"
                 >
                   <span className="inline-flex h-4 w-4 items-center justify-center text-[11px]">+</span>
                   <span>{siteConfig.contact.phoneDisplay}</span>
                 </a>
               ) : null}
-              <div className="flex items-start gap-3 font-inter text-sm text-brand-sand/82">
+              <div className="flex items-start gap-3 font-inter text-sm text-brand-sand">
                 <MapPin size={16} className="mt-0.5 shrink-0" />
                 <span>{siteConfig.contact.city}</span>
               </div>
@@ -156,9 +156,9 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.18 }}
           >
-            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory/86">
+            <h3 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory">
               Rede
-            </h4>
+            </h3>
             <div className="mt-4 flex gap-3">
               {socialLinks.map((social) => (
                 <a
@@ -166,7 +166,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-ivory/18 bg-brand-ivory/8 text-brand-sand/82 transition-all hover:-translate-y-0.5 hover:border-brand-cyan/55 hover:text-brand-cyan"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-ivory/18 bg-brand-ivory/8 text-brand-sand transition-all hover:-translate-y-0.5 hover:border-brand-cyan/55 hover:text-brand-cyan"
                   aria-label={social.label}
                 >
                   <social.icon size={17} />
@@ -179,17 +179,17 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
 
       <div className="border-t border-white/10">
         <div className="container mx-auto flex flex-col gap-4 px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-12">
-          <p className="font-inter text-xs text-brand-sand/56">
+          <p className="font-inter text-xs text-brand-sand/80">
             © {currentYear} {siteConfig.brand.name}. Todos os direitos reservados.
           </p>
           <div className="flex flex-wrap gap-5">
-            <Link href="/privacy" className="font-inter text-xs text-brand-sand/56 transition-colors hover:text-brand-cyan">
+            <Link href="/privacy" className="font-inter text-xs text-brand-sand/80 transition-colors hover:text-brand-cyan">
               Política de Privacidade
             </Link>
-            <Link href="/terms" className="font-inter text-xs text-brand-sand/56 transition-colors hover:text-brand-cyan">
+            <Link href="/terms" className="font-inter text-xs text-brand-sand/80 transition-colors hover:text-brand-cyan">
               Termos de Uso
             </Link>
-            <Link href="/cookies" className="font-inter text-xs text-brand-sand/56 transition-colors hover:text-brand-cyan">
+            <Link href="/cookies" className="font-inter text-xs text-brand-sand/80 transition-colors hover:text-brand-cyan">
               Cookies
             </Link>
           </div>

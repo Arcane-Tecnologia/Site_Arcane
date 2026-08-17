@@ -80,7 +80,7 @@ function ReferenceHero({
           <h1 className="mt-5 max-w-xl font-cormorant text-[2.9rem] leading-[0.98] tracking-[-0.02em] text-[#342820] sm:text-[3.6rem] md:text-[2.55rem] lg:text-[4.55rem]">
             {title}
           </h1>
-          <div className="mt-6 h-px w-16 bg-[#b77956]" />
+          <div className="mt-6 h-px w-16 bg-[#8e5c44]" />
           <p className="mt-5 max-w-lg font-inter text-sm leading-7 text-[#5c4a3c] lg:text-base">
             {subtitle}
           </p>
@@ -90,7 +90,7 @@ function ReferenceHero({
               href={ctas.whatsapp.href}
               target={ctas.whatsapp.href.startsWith('http') ? '_blank' : undefined}
               rel={ctas.whatsapp.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#b77956] px-5 font-inter text-[11px] font-semibold uppercase tracking-[0.13em] text-[#fff8ef] shadow-[0_18px_40px_-22px_rgba(183,121,86,0.7)] transition-all hover:-translate-y-0.5 hover:bg-[#8e5c44]"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#8e5c44] px-5 font-inter text-[11px] font-semibold uppercase tracking-[0.13em] text-[#fff8ef] shadow-[0_18px_40px_-22px_rgba(183,121,86,0.7)] transition-all hover:-translate-y-0.5 hover:bg-[#60483d]"
             >
               <MessageCircle size={15} />
               Conversar sobre o projeto
@@ -168,7 +168,7 @@ function CapabilitiesStrip() {
               index === 0 && 'sm:border-l-0'
             )}
           >
-            <Icon size={21} strokeWidth={1.35} className="shrink-0 text-[#b77956]" />
+            <Icon size={21} strokeWidth={1.35} className="shrink-0 text-[#8e5c44]" />
             <div>
               <p className="font-inter text-[10px] font-semibold text-[#3c2d24]">{label}</p>
               <p className="mt-1 font-inter text-[9px] leading-4 text-[#75665b]">{description}</p>
@@ -214,7 +214,7 @@ function ServicesSection() {
                 <div className="flex flex-1 flex-col p-4">
                   <h3 className="font-cormorant text-[1.55rem] leading-[1.05] text-[#342820]">{service.title}</h3>
                   <p className="mt-3 flex-1 font-inter text-xs leading-5 text-[#75665b]">{service.excerpt}</p>
-                  <span className="mt-5 inline-flex items-center gap-2 font-inter text-[10px] font-semibold uppercase tracking-[0.14em] text-[#b77956]">
+                  <span className="mt-5 inline-flex items-center gap-2 font-inter text-[10px] font-semibold uppercase tracking-[0.14em] text-[#8e5c44]">
                     Saiba mais
                     <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
                   </span>
@@ -269,14 +269,14 @@ function CaseCard({ project }: { project: ProjectItem }) {
           style={{ objectPosition: project.coverPosition ?? 'center center' }}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
-        <span className="absolute left-3 top-3 rounded-full bg-[#b77956] px-2.5 py-1 font-inter text-[9px] font-semibold uppercase tracking-[0.12em] text-[#fff8ef]">
+        <span className="absolute left-3 top-3 rounded-full bg-[#8e5c44] px-2.5 py-1 font-inter text-[9px] font-semibold uppercase tracking-[0.12em] text-[#fff8ef]">
           {project.segment}
         </span>
       </div>
       <div className="p-4">
         <h3 className="font-cormorant text-[1.35rem] leading-[1.05] text-[#342820]">{project.title}</h3>
         <p className="mt-3 line-clamp-3 font-inter text-xs leading-5 text-[#75665b]">{project.excerpt}</p>
-        <span className="mt-5 inline-flex items-center gap-2 font-inter text-[10px] font-semibold uppercase tracking-[0.12em] text-[#b77956]">
+        <span className="mt-5 inline-flex items-center gap-2 font-inter text-[10px] font-semibold uppercase tracking-[0.12em] text-[#8e5c44]">
           Ver case completo
           <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
         </span>
@@ -298,10 +298,10 @@ function ProcessSection() {
                 {index < serviceProcessSteps.length - 1 ? (
                   <span className="absolute left-[calc(50%+2.1rem)] right-[calc(-50%-2.1rem)] top-9 hidden border-t border-dashed border-[#d29b7c] lg:block" />
                 ) : null}
-                <div className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#d5b69c] bg-[#fffaf4] text-[#b77956] shadow-sm">
+                <div className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#d5b69c] bg-[#fffaf4] text-[#8e5c44] shadow-sm">
                   <Icon size={22} strokeWidth={1.35} />
                 </div>
-                <p className="mt-3 font-cormorant text-lg text-[#b77956]">{step.number}</p>
+                <p className="mt-3 font-cormorant text-lg text-[#8e5c44]">{step.number}</p>
                 <h3 className="mt-1 font-cormorant text-[1.22rem] leading-none text-[#342820]">{step.title.replace(' do contexto', '').replace(' do problema', '')}</h3>
                 <p className="mt-2 font-inter text-[11px] leading-4 text-[#75665b]">{step.description}</p>
               </div>

@@ -44,7 +44,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
   return (
     <>
       <header
-        className="fixed left-0 right-0 top-0 z-50 border-b border-brand-terracotta/30 bg-[#60483d]/95 shadow-[0_22px_80px_-44px_rgba(63,45,39,0.62)] backdrop-blur-2xl transition-all duration-500"
+        className="fixed left-0 right-0 top-0 z-50 border-b border-brand-terracotta/30 bg-[#60483d] shadow-[0_22px_80px_-44px_rgba(63,45,39,0.62)] backdrop-blur-2xl transition-all duration-500"
       >
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex h-20 items-center justify-between gap-6 lg:h-24">
@@ -92,7 +92,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                             : 'bg-brand-ivory/10 text-brand-ivory'
                           : useDarkText
                             ? 'text-[#60483d] hover:bg-white hover:text-[#342820]'
-                            : 'text-brand-ivory/74 hover:bg-brand-ivory/8 hover:text-brand-ivory'
+                            : 'text-brand-ivory hover:bg-brand-ivory/8 hover:text-brand-ivory'
                       )}
                     >
                       {item.label}
@@ -105,8 +105,8 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                 <a
                   href={`mailto:${siteConfig.contact.salesEmail}`}
                   className={cn(
-                    'inline-flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.18em] transition-colors',
-                    useDarkText ? 'text-[#60483d] hover:text-brand-cyan-strong' : 'text-brand-ivory/72 hover:text-brand-ivory'
+                    'inline-flex items-center gap-2 rounded-sm bg-[#60483d] px-2 py-1 font-inter text-[10px] uppercase tracking-[0.18em] transition-colors',
+                    useDarkText ? 'text-[#60483d] hover:text-brand-cyan-strong' : 'text-brand-ivory hover:text-brand-ivory'
                   )}
                 >
                   {siteConfig.contact.salesEmail}

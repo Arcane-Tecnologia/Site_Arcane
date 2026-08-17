@@ -226,6 +226,26 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
   ::selection {
     background-color: rgba(183, 121, 86, 0.28);
   }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-cyan-strong);
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 .font-cormorant {
