@@ -31,14 +31,14 @@ export function ServicesPreview() {
             className="max-w-2xl"
           >
             <span className="section-kicker">Capacidades principais</span>
-            <h2 className="mt-5 font-cormorant text-[2.1rem] leading-[1.02] text-slate-950 lg:text-[3rem]">
+            <h2 className="mt-5 font-cormorant text-[2.1rem] leading-[1.02] text-[#342820] lg:text-[3rem]">
               Três linhas para resolver o que mais costuma travar crescimento.
             </h2>
           </motion.div>
 
           <Link
             href="/services"
-            className="group inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-600 transition-colors hover:text-brand-cyan-strong"
+            className="group inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-[#60483d] transition-colors hover:text-brand-cyan-strong"
           >
             Ver todos os serviços
             <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
@@ -58,7 +58,7 @@ export function ServicesPreview() {
                 href={`/services/${service.slug}`}
                 className="group panel-shell relative flex h-full flex-col overflow-hidden rounded-[1.7rem] p-4 transition-all hover:-translate-y-1 hover:border-brand-cyan/35"
               >
-                <div className="relative overflow-hidden rounded-[1.25rem] border border-white/50 bg-[#191613]/5">
+                <div className="relative overflow-hidden rounded-[1.25rem] border border-white/50 bg-[#3f2d27]/5">
                   <div className="relative h-44">
                     <Image
                       src={service.image}
@@ -66,16 +66,16 @@ export function ServicesPreview() {
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.08)_0%,rgba(43,33,27,0.44)_100%)]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.08)_0%,rgba(63,45,39,0.44)_100%)]" />
                   </div>
                 </div>
 
                 <div className="flex flex-1 flex-col justify-between px-2 pb-2 pt-5">
                   <div>
-                    <h3 className="font-cormorant text-[1.9rem] leading-tight text-slate-950">
+                    <h3 className="font-cormorant text-[1.9rem] leading-tight text-[#342820]">
                       {service.title}
                     </h3>
-                    <p className="mt-3 font-inter text-sm leading-relaxed text-slate-700">
+                    <p className="mt-3 font-inter text-sm leading-relaxed text-[#4f3d32]">
                       {service.excerpt}
                     </p>
                   </div>

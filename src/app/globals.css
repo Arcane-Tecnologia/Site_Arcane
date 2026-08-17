@@ -78,119 +78,119 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
 :root {
   --radius: 0.875rem;
-  --background: #eee4d8;
-  --foreground: #211b17;
-  --card: #fbf6ef;
-  --card-foreground: #211b17;
-  --popover: #fbf6ef;
-  --popover-foreground: #211b17;
-  --primary: #a85d3a;
-  --primary-foreground: #f7f1e8;
-  --secondary: #e8d8c5;
-  --secondary-foreground: #211b17;
-  --muted: #eee4d8;
-  --muted-foreground: #75665b;
-  --accent: #f1e2d4;
-  --accent-foreground: #211b17;
+  --background: #f5ece2;
+  --foreground: #342820;
+  --card: #fffaf4;
+  --card-foreground: #342820;
+  --popover: #fffaf4;
+  --popover-foreground: #342820;
+  --primary: #b77956;
+  --primary-foreground: #fffaf4;
+  --secondary: #e7d5c3;
+  --secondary-foreground: #342820;
+  --muted: #f1e6da;
+  --muted-foreground: #7d6a5d;
+  --accent: #ebd5c5;
+  --accent-foreground: #342820;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #d9c8b7;
-  --input: #d9c8b7;
-  --ring: #b96e49;
-  --chart-1: #a85d3a;
-  --chart-2: #2b211b;
-  --chart-3: #c9815d;
-  --chart-4: #e8d8c5;
-  --chart-5: #6e7353;
-  --sidebar: #2b211b;
-  --sidebar-foreground: #f3e8da;
-  --sidebar-primary: #c9815d;
-  --sidebar-primary-foreground: #211b17;
-  --sidebar-accent: #403128;
-  --sidebar-accent-foreground: #f7f1e8;
-  --sidebar-border: #59453a;
-  --sidebar-ring: #c9815d;
-  --brand-graphite: #2b211b;
-  --brand-cyan: #a85d3a;
-  --brand-cyan-strong: #7f4228;
-  --brand-cyan-soft: #f1e2d4;
-  --brand-cyan-veil: rgba(168, 93, 58, 0.14);
-  --brand-clay: #a85d3a;
-  --brand-terracotta: #c9815d;
-  --brand-sand: #e8d8c5;
-  --brand-ivory: #f7f1e8;
-  --brand-olive: #6e7353;
-  --brand-ice: #fbf6ef;
-  --surface-page: #eee4d8;
-  --surface-section: #e6d6c5;
-  --surface-section-strong: #d6c1ad;
-  --surface-panel: rgba(251, 246, 239, 0.9);
-  --surface-panel-strong: #fbf6ef;
-  --surface-dark: #191613;
-  --surface-dark-elevated: #2b211b;
-  --surface-dark-strong: #403128;
-  --ink-soft: #46382f;
-  --ink-muted: #75665b;
-  --line-subtle: rgba(43, 33, 27, 0.12);
-  --line-strong: rgba(43, 33, 27, 0.2);
-  --glow-cyan: rgba(168, 93, 58, 0.3);
+  --border: #d8c1ae;
+  --input: #d8c1ae;
+  --ring: #bd8868;
+  --chart-1: #b77956;
+  --chart-2: #60483d;
+  --chart-3: #d29b7c;
+  --chart-4: #e7d5c3;
+  --chart-5: #877b5f;
+  --sidebar: #3f2d27;
+  --sidebar-foreground: #fff9f2;
+  --sidebar-primary: #d29b7c;
+  --sidebar-primary-foreground: #342820;
+  --sidebar-accent: #60483d;
+  --sidebar-accent-foreground: #fffaf4;
+  --sidebar-border: #745748;
+  --sidebar-ring: #d29b7c;
+  --brand-graphite: #60483d;
+  --brand-cyan: #b77956;
+  --brand-cyan-strong: #8e5c44;
+  --brand-cyan-soft: #ebd5c5;
+  --brand-cyan-veil: rgba(183, 121, 86, 0.14);
+  --brand-clay: #b77956;
+  --brand-terracotta: #d29b7c;
+  --brand-sand: #e7d5c3;
+  --brand-ivory: #fff9f2;
+  --brand-olive: #877b5f;
+  --brand-ice: #fffaf4;
+  --surface-page: #f5ece2;
+  --surface-section: #efe1d3;
+  --surface-section-strong: #e1cbb8;
+  --surface-panel: rgba(255, 250, 244, 0.9);
+  --surface-panel-strong: #fffaf4;
+  --surface-dark: #3f2d27;
+  --surface-dark-elevated: #60483d;
+  --surface-dark-strong: #6b4c3e;
+  --ink-soft: #4f3d32;
+  --ink-muted: #7d6a5d;
+  --line-subtle: rgba(63, 45, 39, 0.14);
+  --line-strong: rgba(63, 45, 39, 0.24);
+  --glow-cyan: rgba(183, 121, 86, 0.3);
 }
 
 .dark {
-  --background: #15110f;
-  --foreground: #f7f1e8;
-  --card: #241b17;
-  --card-foreground: #f7f1e8;
-  --popover: #241b17;
-  --popover-foreground: #f7f1e8;
-  --primary: #c9815d;
-  --primary-foreground: #211b17;
-  --secondary: #33261f;
-  --secondary-foreground: #f7f1e8;
-  --muted: #33261f;
-  --muted-foreground: #c6b5a4;
-  --accent: #4c3328;
-  --accent-foreground: #f7e8da;
+  --background: #2b1f1a;
+  --foreground: #fff9f2;
+  --card: #3f2d27;
+  --card-foreground: #fff9f2;
+  --popover: #3f2d27;
+  --popover-foreground: #fff9f2;
+  --primary: #d29b7c;
+  --primary-foreground: #342820;
+  --secondary: #4b362d;
+  --secondary-foreground: #fff9f2;
+  --muted: #4b362d;
+  --muted-foreground: #d4bca9;
+  --accent: #60483d;
+  --accent-foreground: #fff1e4;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: rgba(230, 214, 197, 0.18);
-  --input: rgba(230, 214, 197, 0.24);
-  --ring: #c9815d;
-  --chart-1: #c9815d;
-  --chart-2: #a85d3a;
-  --chart-3: #e1a17e;
-  --chart-4: #4c3328;
-  --chart-5: #d6c1ad;
-  --sidebar: #15110f;
-  --sidebar-foreground: #f7f1e8;
-  --sidebar-primary: #c9815d;
-  --sidebar-primary-foreground: #211b17;
-  --sidebar-accent: #241b17;
-  --sidebar-accent-foreground: #fbf6ef;
-  --sidebar-border: #49362d;
-  --sidebar-ring: #e1a17e;
-  --brand-graphite: #f7f1e8;
-  --brand-cyan: #c9815d;
-  --brand-cyan-strong: #e1a17e;
-  --brand-cyan-soft: #4c3328;
-  --brand-cyan-veil: rgba(201, 129, 93, 0.16);
-  --brand-clay: #a85d3a;
-  --brand-terracotta: #c9815d;
-  --brand-sand: #e8d8c5;
-  --brand-ivory: #f7f1e8;
-  --brand-olive: #a6a87a;
-  --brand-ice: #fff8ef;
-  --surface-page: #15110f;
-  --surface-section: #1d1612;
-  --surface-section-strong: #33261f;
-  --surface-panel: rgba(36, 27, 23, 0.84);
-  --surface-panel-strong: #241b17;
-  --surface-dark: #0f0c0a;
-  --surface-dark-elevated: #1d1612;
-  --surface-dark-strong: #33261f;
-  --ink-soft: #f0e4d7;
-  --ink-muted: #c6b5a4;
-  --line-subtle: rgba(230, 214, 197, 0.14);
-  --line-strong: rgba(230, 214, 197, 0.22);
-  --glow-cyan: rgba(201, 129, 93, 0.28);
+  --border: rgba(239, 225, 211, 0.2);
+  --input: rgba(239, 225, 211, 0.26);
+  --ring: #d29b7c;
+  --chart-1: #d29b7c;
+  --chart-2: #b77956;
+  --chart-3: #e3b398;
+  --chart-4: #60483d;
+  --chart-5: #d8c1ae;
+  --sidebar: #2b1f1a;
+  --sidebar-foreground: #fff9f2;
+  --sidebar-primary: #d29b7c;
+  --sidebar-primary-foreground: #342820;
+  --sidebar-accent: #3f2d27;
+  --sidebar-accent-foreground: #fffaf4;
+  --sidebar-border: #60483d;
+  --sidebar-ring: #e3b398;
+  --brand-graphite: #fff9f2;
+  --brand-cyan: #d29b7c;
+  --brand-cyan-strong: #e3b398;
+  --brand-cyan-soft: #60483d;
+  --brand-cyan-veil: rgba(210, 155, 124, 0.16);
+  --brand-clay: #b77956;
+  --brand-terracotta: #d29b7c;
+  --brand-sand: #e7d5c3;
+  --brand-ivory: #fff9f2;
+  --brand-olive: #b3aa86;
+  --brand-ice: #fffaf4;
+  --surface-page: #2b1f1a;
+  --surface-section: #34251f;
+  --surface-section-strong: #4b362d;
+  --surface-panel: rgba(63, 45, 39, 0.84);
+  --surface-panel-strong: #3f2d27;
+  --surface-dark: #241914;
+  --surface-dark-elevated: #34251f;
+  --surface-dark-strong: #4b362d;
+  --ink-soft: #f5e8dc;
+  --ink-muted: #d4bca9;
+  --line-subtle: rgba(239, 225, 211, 0.16);
+  --line-strong: rgba(239, 225, 211, 0.24);
+  --glow-cyan: rgba(210, 155, 124, 0.28);
 }
 
 @layer base {
@@ -204,9 +204,9 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
   body {
     background:
-      radial-gradient(circle at top left, rgba(168, 93, 58, 0.16), transparent 24%),
-      radial-gradient(circle at top right, rgba(43, 33, 27, 0.08), transparent 22%),
-      linear-gradient(180deg, #fbf6ef 0%, var(--surface-page) 24%, #e6d6c5 100%);
+      radial-gradient(circle at top left, rgba(183, 121, 86, 0.14), transparent 24%),
+      radial-gradient(circle at top right, rgba(96, 72, 61, 0.08), transparent 22%),
+      linear-gradient(180deg, #fffaf4 0%, var(--surface-page) 24%, #e1cbb8 100%);
     @apply bg-background text-foreground;
   }
 
@@ -216,8 +216,8 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
     inset: 0;
     pointer-events: none;
     background-image:
-      linear-gradient(rgba(255, 255, 255, 0.34) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.24) 1px, transparent 1px);
+      linear-gradient(rgba(255, 255, 255, 0.38) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px);
     background-size: 120px 120px;
     mask-image: radial-gradient(circle at center, black 32%, transparent 82%);
     opacity: 0.22;
@@ -225,7 +225,7 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
   }
 
   ::selection {
-    background-color: rgba(168, 93, 58, 0.28);
+    background-color: rgba(183, 121, 86, 0.28);
   }
 }
 
@@ -244,56 +244,56 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 @layer utilities {
   .section-shell {
     background:
-      radial-gradient(circle at top right, rgba(168, 93, 58, 0.08), transparent 24%),
-      linear-gradient(180deg, rgba(251, 246, 239, 0.92) 0%, rgba(238, 228, 216, 0.92) 100%);
+      radial-gradient(circle at top right, rgba(183, 121, 86, 0.08), transparent 24%),
+      linear-gradient(180deg, rgba(255, 250, 244, 0.94) 0%, rgba(245, 236, 226, 0.94) 100%);
   }
 
   .section-shell-alt {
     background:
-      radial-gradient(circle at top left, rgba(168, 93, 58, 0.09), transparent 22%),
-      linear-gradient(180deg, rgba(230, 214, 197, 0.92) 0%, rgba(214, 193, 173, 0.9) 100%);
+      radial-gradient(circle at top left, rgba(183, 121, 86, 0.09), transparent 22%),
+      linear-gradient(180deg, rgba(239, 225, 211, 0.94) 0%, rgba(225, 203, 184, 0.92) 100%);
   }
 
   .section-shell-dark {
     background:
-      radial-gradient(circle at top left, rgba(168, 93, 58, 0.2), transparent 22%),
-      radial-gradient(circle at 85% 15%, rgba(201, 129, 93, 0.1), transparent 16%),
+      radial-gradient(circle at top left, rgba(183, 121, 86, 0.2), transparent 22%),
+      radial-gradient(circle at 85% 15%, rgba(210, 155, 124, 0.1), transparent 16%),
       linear-gradient(155deg, var(--surface-dark) 0%, var(--surface-dark-elevated) 52%, var(--surface-dark-strong) 100%);
   }
 
   .hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(25, 22, 19, 0.62) 0%,
-      rgba(25, 22, 19, 0.74) 42%,
-      rgba(25, 22, 19, 0.94) 100%
+      rgba(63, 45, 39, 0.58) 0%,
+      rgba(63, 45, 39, 0.7) 42%,
+      rgba(43, 31, 26, 0.92) 100%
     );
   }
 
   .panel-shell {
     background:
-      linear-gradient(180deg, rgba(251, 246, 239, 0.92) 0%, rgba(247, 241, 232, 0.96) 100%);
+      linear-gradient(180deg, rgba(255, 250, 244, 0.95) 0%, rgba(255, 246, 238, 0.98) 100%);
     border: 1px solid rgba(255, 255, 255, 0.74);
     box-shadow:
-      0 30px 70px -42px rgba(43, 33, 27, 0.24),
+      0 30px 70px -42px rgba(63, 45, 39, 0.24),
       inset 0 1px 0 rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(18px);
   }
 
   .panel-shell-muted {
     background:
-      linear-gradient(180deg, rgba(251, 246, 239, 0.72) 0%, rgba(238, 228, 216, 0.8) 100%);
+      linear-gradient(180deg, rgba(255, 250, 244, 0.76) 0%, rgba(245, 236, 226, 0.86) 100%);
     border: 1px solid rgba(255, 255, 255, 0.58);
     box-shadow:
-      0 28px 68px -44px rgba(43, 33, 27, 0.22),
+      0 28px 68px -44px rgba(63, 45, 39, 0.22),
       inset 0 1px 0 rgba(255, 255, 255, 0.48);
     backdrop-filter: blur(20px);
   }
 
   .panel-shell-dark {
     background:
-      linear-gradient(180deg, rgba(25, 22, 19, 0.88) 0%, rgba(43, 33, 27, 0.96) 100%);
-    border: 1px solid rgba(201, 129, 93, 0.22);
+      linear-gradient(180deg, rgba(63, 45, 39, 0.9) 0%, rgba(96, 72, 61, 0.96) 100%);
+    border: 1px solid rgba(210, 155, 124, 0.24);
     box-shadow:
       0 36px 90px -48px rgba(0, 0, 0, 0.72),
       inset 0 1px 0 rgba(255, 255, 255, 0.06);
@@ -302,8 +302,8 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
   .cta-shell {
     background:
-      radial-gradient(circle at top left, rgba(201, 129, 93, 0.24), transparent 24%),
-      linear-gradient(135deg, #191613 0%, #2b211b 52%, #7f4228 132%);
+      radial-gradient(circle at top left, rgba(210, 155, 124, 0.24), transparent 24%),
+      linear-gradient(135deg, #3f2d27 0%, #60483d 52%, #8e5c44 132%);
   }
 
   .eyebrow {
@@ -341,17 +341,17 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
   }
 
   .field-shell {
-    background: linear-gradient(180deg, rgba(255, 252, 247, 0.92) 0%, rgba(247, 241, 232, 0.98) 100%);
-    border-color: rgba(43, 33, 27, 0.14);
+    background: linear-gradient(180deg, rgba(255, 252, 247, 0.94) 0%, rgba(255, 246, 238, 0.98) 100%);
+    border-color: rgba(63, 45, 39, 0.16);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.7),
-      0 18px 40px -34px rgba(43, 33, 27, 0.18);
+      0 18px 40px -34px rgba(63, 45, 39, 0.18);
   }
 
   .site-divider {
     height: 1px;
     width: 100%;
-    background: linear-gradient(90deg, transparent, rgba(168, 93, 58, 0.42), transparent);
+    background: linear-gradient(90deg, transparent, rgba(183, 121, 86, 0.42), transparent);
   }
 
   .premium-grid {
@@ -374,21 +374,21 @@ Guia rápido: consulte imports no topo, depois tipos/constantes, e por fim a exp
 
   .halo-cyan {
     box-shadow:
-      0 0 0 1px rgba(201, 129, 93, 0.14),
-      0 0 80px -36px rgba(168, 93, 58, 0.38);
+      0 0 0 1px rgba(210, 155, 124, 0.16),
+      0 0 80px -36px rgba(183, 121, 86, 0.38);
   }
 
   .text-brand-outlined {
     @apply text-white;
     text-shadow:
-      -1px -1px 0 #211b17,
-      1px -1px 0 #211b17,
-      -1px 1px 0 #211b17,
-      1px 1px 0 #211b17,
-      0px -1px 0 #211b17,
-      0px 1px 0 #211b17,
-      -1px 0px 0 #211b17,
-      1px 0px 0 #211b17,
+      -1px -1px 0 #342820,
+      1px -1px 0 #342820,
+      -1px 1px 0 #342820,
+      1px 1px 0 #342820,
+      0px -1px 0 #342820,
+      0px 1px 0 #342820,
+      -1px 0px 0 #342820,
+      1px 0px 0 #342820,
       0 3px 6px rgba(43, 33, 27, 0.42);
   }
 }

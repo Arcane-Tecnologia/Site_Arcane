@@ -54,7 +54,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.18em] text-slate-300 transition-colors hover:text-brand-cyan"
+            className="inline-flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.18em] text-brand-sand/82 transition-colors hover:text-brand-cyan"
           >
             <ArrowLeft size={12} />
             Voltar para serviços
@@ -69,7 +69,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <p className="mt-4 font-inter text-[11px] uppercase tracking-[0.18em] text-brand-cyan">
                 {service.decisionLabel}
               </p>
-              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-slate-300 lg:text-base">
+              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-brand-sand/82 lg:text-base">
                 {service.description}
               </p>
             </div>
@@ -83,7 +83,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">
                     {highlight.label}
                   </p>
-                  <p className="mt-2 font-inter text-sm leading-relaxed text-slate-200">
+                  <p className="mt-2 font-inter text-sm leading-relaxed text-brand-ivory/84">
                     {highlight.value}
                   </p>
                 </div>
@@ -106,7 +106,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.08)_0%,rgba(43,33,27,0.52)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.08)_0%,rgba(63,45,39,0.52)_100%)]" />
                 </div>
               </div>
 
@@ -114,10 +114,10 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan-strong">
                   Enquadramento consultivo
                 </p>
-                <p className="mt-3 font-cormorant text-[2rem] leading-tight text-slate-950">
+                <p className="mt-3 font-cormorant text-[2rem] leading-tight text-[#342820]">
                   {service.subtitle}
                 </p>
-                <p className="mt-4 font-inter text-sm leading-relaxed text-slate-700">
+                <p className="mt-4 font-inter text-sm leading-relaxed text-[#4f3d32]">
                   {service.engagementNote}
                 </p>
               </div>
@@ -132,7 +132,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   {service.idealFor.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <CheckCircle2 size={16} className="mt-0.5 text-brand-cyan-strong" />
-                      <span className="font-inter text-sm leading-relaxed text-slate-700">{item}</span>
+                      <span className="font-inter text-sm leading-relaxed text-[#4f3d32]">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -146,7 +146,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   {service.businessProblems.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brand-cyan-strong" />
-                      <span className="font-inter text-sm leading-relaxed text-slate-700">{item}</span>
+                      <span className="font-inter text-sm leading-relaxed text-[#4f3d32]">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -160,24 +160,24 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid gap-6 lg:grid-cols-2">
             <article className="panel-shell rounded-[1.9rem] p-6">
-              <h2 className="font-cormorant text-[2rem] text-slate-950">Aplicações típicas</h2>
+              <h2 className="font-cormorant text-[2rem] text-[#342820]">Aplicações típicas</h2>
               <ul className="mt-5 space-y-3">
                 {service.applications.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle2 size={16} className="mt-0.5 text-brand-cyan-strong" />
-                    <span className="font-inter text-sm text-slate-700">{item}</span>
+                    <span className="font-inter text-sm text-[#4f3d32]">{item}</span>
                   </li>
                 ))}
               </ul>
             </article>
 
             <article className="panel-shell rounded-[1.9rem] p-6">
-              <h2 className="font-cormorant text-[2rem] text-slate-950">Benefícios esperados</h2>
+              <h2 className="font-cormorant text-[2rem] text-[#342820]">Benefícios esperados</h2>
               <ul className="mt-5 space-y-3">
                 {service.benefits.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle2 size={16} className="mt-0.5 text-brand-cyan-strong" />
-                    <span className="font-inter text-sm text-slate-700">{item}</span>
+                    <span className="font-inter text-sm text-[#4f3d32]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -186,24 +186,24 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <article className="panel-shell rounded-[1.9rem] p-6">
-              <h2 className="font-cormorant text-[2rem] text-slate-950">Escopo de entrega</h2>
+              <h2 className="font-cormorant text-[2rem] text-[#342820]">Escopo de entrega</h2>
               <ul className="mt-5 space-y-3">
                 {service.deliverables.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle2 size={16} className="mt-0.5 text-brand-cyan-strong" />
-                    <span className="font-inter text-sm text-slate-700">{item}</span>
+                    <span className="font-inter text-sm text-[#4f3d32]">{item}</span>
                   </li>
                 ))}
               </ul>
             </article>
 
             <article className="panel-shell rounded-[1.9rem] p-6">
-              <h2 className="font-cormorant text-[2rem] text-slate-950">Foco técnico</h2>
+              <h2 className="font-cormorant text-[2rem] text-[#342820]">Foco técnico</h2>
               <div className="mt-5">
                 <h3 className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan-strong">Pilares</h3>
                 <ul className="mt-3 space-y-2">
                   {service.highlights.map((item) => (
-                    <li key={item} className="font-inter text-sm text-slate-700">
+                    <li key={item} className="font-inter text-sm text-[#4f3d32]">
                       {item}
                     </li>
                   ))}
@@ -215,7 +215,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </h3>
                 <ul className="mt-3 space-y-2">
                   {service.kpis.map((item) => (
-                    <li key={item} className="font-inter text-sm text-slate-700">
+                    <li key={item} className="font-inter text-sm text-[#4f3d32]">
                       {item}
                     </li>
                   ))}
@@ -237,7 +237,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href={service.cta.primaryHref}
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(168,93,58,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(183,121,86,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
             >
               {service.cta.primaryLabel}
               <ArrowRight size={14} />

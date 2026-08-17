@@ -64,16 +64,16 @@ export function ConversionCTAs({
     'inline-flex items-center justify-center gap-2 rounded-full border font-inter font-semibold uppercase transition-all duration-300',
     baseClasses,
     surface === 'light'
-      ? 'border-brand-cyan bg-brand-cyan text-white shadow-[0_22px_56px_-26px_rgba(168,93,58,0.42)] hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:border-brand-cyan-strong hover:text-white'
-      : 'border-brand-terracotta/70 bg-[linear-gradient(135deg,#e1a17e_0%,#c9815d_58%,#7f4228_150%)] text-white shadow-[0_24px_66px_-28px_rgba(168,93,58,0.5)] hover:-translate-y-0.5 hover:shadow-[0_30px_74px_-28px_rgba(168,93,58,0.64)]'
+      ? 'border-brand-cyan bg-brand-cyan text-white shadow-[0_22px_56px_-26px_rgba(183,121,86,0.42)] hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:border-brand-cyan-strong hover:text-white'
+      : 'border-brand-terracotta/70 bg-[linear-gradient(135deg,#d29b7c_0%,#b77956_58%,#8e5c44_150%)] text-white shadow-[0_24px_66px_-28px_rgba(183,121,86,0.5)] hover:-translate-y-0.5 hover:shadow-[0_30px_74px_-28px_rgba(183,121,86,0.64)]'
   )
 
   const secondaryClasses = cn(
     'inline-flex items-center justify-center gap-2 rounded-full border font-inter font-semibold uppercase transition-all duration-300',
     baseClasses,
     surface === 'light'
-      ? 'border-slate-300/85 bg-white/74 text-slate-900 shadow-[0_18px_44px_-30px_rgba(43,33,27,0.18)] backdrop-blur-md hover:-translate-y-0.5 hover:border-brand-cyan/40 hover:text-brand-cyan-strong'
-      : 'border-white/12 bg-[#191613]/72 text-slate-50 shadow-[0_22px_60px_-36px_rgba(43,33,27,0.72)] backdrop-blur-md hover:-translate-y-0.5 hover:border-brand-cyan/60 hover:text-brand-cyan'
+      ? 'border-[#d8c1ae]/85 bg-[#fffaf4]/78 text-[#342820] shadow-[0_18px_44px_-30px_rgba(63,45,39,0.18)] backdrop-blur-md hover:-translate-y-0.5 hover:border-brand-cyan/40 hover:text-brand-cyan-strong'
+      : 'border-brand-ivory/18 bg-[#3f2d27]/72 text-brand-ivory shadow-[0_22px_60px_-36px_rgba(63,45,39,0.72)] backdrop-blur-md hover:-translate-y-0.5 hover:border-brand-cyan/60 hover:text-brand-cyan'
   )
 
   return (

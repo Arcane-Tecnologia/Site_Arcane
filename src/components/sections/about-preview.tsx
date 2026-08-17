@@ -22,16 +22,16 @@ export function AboutPreview() {
           className="panel-shell-muted mx-auto max-w-4xl rounded-[2rem] p-8 text-center lg:p-10"
         >
           <span className="section-kicker justify-center">Sobre a Arcane</span>
-          <h2 className="mt-5 font-cormorant text-[2.1rem] leading-[1.02] text-slate-950 lg:text-[3rem]">
+          <h2 className="mt-5 font-cormorant text-[2.1rem] leading-[1.02] text-[#342820] lg:text-[3rem]">
             Engenharia com leitura real de operação.
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl font-inter text-sm leading-relaxed text-slate-700 lg:text-base">
+          <p className="mx-auto mt-5 max-w-2xl font-inter text-sm leading-relaxed text-[#4f3d32] lg:text-base">
             Construímos soluções para empresas que precisam tomar decisões melhores, operar com mais clareza e evoluir com uma base técnica mais sólida.
           </p>
 
           <Link
             href="/about"
-            className="group mt-8 inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-600 transition-colors hover:text-brand-cyan-strong"
+            className="group mt-8 inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-[#60483d] transition-colors hover:text-brand-cyan-strong"
           >
             Conhecer a Arcane
             <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />

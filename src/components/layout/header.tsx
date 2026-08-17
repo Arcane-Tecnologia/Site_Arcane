@@ -44,7 +44,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
   return (
     <>
       <header
-        className="fixed left-0 right-0 top-0 z-50 border-b border-brand-terracotta/30 bg-[#2b211b]/95 shadow-[0_22px_80px_-44px_rgba(25,22,19,0.82)] backdrop-blur-2xl transition-all duration-500"
+        className="fixed left-0 right-0 top-0 z-50 border-b border-brand-terracotta/30 bg-[#60483d]/95 shadow-[0_22px_80px_-44px_rgba(63,45,39,0.62)] backdrop-blur-2xl transition-all duration-500"
       >
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex h-20 items-center justify-between gap-6 lg:h-24">
@@ -70,7 +70,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                 className={cn(
                   'flex items-center gap-1 rounded-full border px-2 py-1 backdrop-blur-md transition-all duration-300',
                   useDarkText
-                    ? 'border-slate-300/80 bg-white/72'
+                    ? 'border-[#d8c1ae]/80 bg-[#fffaf4]/78'
                     : 'border-white/12 bg-white/6'
                 )}
               >
@@ -88,11 +88,11 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                         'relative inline-flex items-center rounded-full px-3 py-2 font-inter text-[10px] uppercase tracking-[0.12em] transition-all duration-300 lg:px-4 lg:text-[11px] lg:tracking-[0.14em]',
                         isItemActive(item.href)
                           ? useDarkText
-                            ? 'bg-[#191613] text-white shadow-[0_14px_30px_-20px_rgba(43,33,27,0.54)]'
-                            : 'bg-white/10 text-white'
+                            ? 'bg-[#3f2d27] text-brand-ivory shadow-[0_14px_30px_-20px_rgba(63,45,39,0.54)]'
+                            : 'bg-brand-ivory/10 text-brand-ivory'
                           : useDarkText
-                            ? 'text-slate-600 hover:bg-white hover:text-slate-950'
-                            : 'text-white/74 hover:bg-white/6 hover:text-white'
+                            ? 'text-[#60483d] hover:bg-white hover:text-[#342820]'
+                            : 'text-brand-ivory/74 hover:bg-brand-ivory/8 hover:text-brand-ivory'
                       )}
                     >
                       {item.label}
@@ -106,7 +106,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                   href={`mailto:${siteConfig.contact.salesEmail}`}
                   className={cn(
                     'inline-flex items-center gap-2 font-inter text-[10px] uppercase tracking-[0.18em] transition-colors',
-                    useDarkText ? 'text-slate-600 hover:text-brand-cyan-strong' : 'text-white/72 hover:text-white'
+                    useDarkText ? 'text-[#60483d] hover:text-brand-cyan-strong' : 'text-brand-ivory/72 hover:text-brand-ivory'
                   )}
                 >
                   {siteConfig.contact.salesEmail}
@@ -130,8 +130,8 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
               className={cn(
                 'relative z-50 inline-flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300 md:hidden',
                 useDarkText
-                  ? 'border-slate-300/80 bg-white/72 text-slate-950'
-                  : 'border-white/12 bg-white/6 text-white'
+                  ? 'border-[#d8c1ae]/80 bg-[#fffaf4]/78 text-[#342820]'
+                  : 'border-brand-ivory/18 bg-brand-ivory/8 text-brand-ivory'
               )}
               aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
               aria-expanded={isOpen}
@@ -176,7 +176,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                             'group flex items-center justify-between border-b border-white/8 py-4 font-cormorant text-[2rem] tracking-[0.08em] transition-colors duration-300',
                             isItemActive(item.href)
                               ? 'text-brand-cyan'
-                              : 'text-slate-300 hover:text-white'
+                              : 'text-brand-sand hover:text-brand-ivory'
                           )}
                         >
                           {item.label}
@@ -191,7 +191,7 @@ export function Header({ ctas }: { ctas: ConversionCtaConfig }) {
                 </div>
 
                 <div className="space-y-5">
-                  <p className="max-w-md font-inter text-sm leading-relaxed text-slate-300">
+                  <p className="max-w-md font-inter text-sm leading-relaxed text-brand-sand/82">
                     Arquitetura técnica, automação e software sob medida para operações que exigem controle real.
                   </p>
                   <ConversionCTAs

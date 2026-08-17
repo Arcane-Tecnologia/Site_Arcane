@@ -32,7 +32,7 @@ const ollamaCase = await source('./src/app/(site)/projects/automacao-ollama-n8n-
 assert.match(rootLayout, /createPageMetadata/, 'layout deve usar metadata com canonical')
 assert.match(rootLayout, /application\/ld\+json/, 'layout deve publicar dados estruturados')
 assert.match(projectDetail, /generateMetadata/, 'cases dinâmicos devem ter metadata própria')
-assert.match(globals, /--brand-clay:\s*#a85d3a/i, 'tokens terrosos devem existir')
+assert.match(globals, /--brand-clay:\s*#b77956/i, 'tokens terrosos devem existir')
 assert.match(chat, /aria-expanded=\{isOpen\}/, 'chat deve expor aria-expanded')
 assert.match(chat, /aria-label=\{isOpen \? 'Fechar conversa' : 'Abrir conversa'\}/, 'chat deve expor label de estado')
 assert.match(gdpr, /aria-label="Fechar configurações de cookies"/, 'close de cookies deve ter nome acessível')

@@ -40,7 +40,7 @@ export default async function ProjectsPage() {
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pb-14 pt-32 lg:pb-[4.5rem] lg:pt-40">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(210,155,124,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.96fr_1.04fr] lg:items-end">
             <div className="max-w-4xl">
@@ -48,7 +48,7 @@ export default async function ProjectsPage() {
               <h1 className="mt-5 font-cormorant text-[2.8rem] leading-[0.98] text-white lg:text-[4.9rem]">
                 {content.projects_heading}
               </h1>
-              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-slate-300 lg:text-base">
+              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-brand-sand/82 lg:text-base">
                 {content.projects_description}
               </p>
             </div>
@@ -62,7 +62,7 @@ export default async function ProjectsPage() {
                   className="object-cover"
                   style={{ objectPosition: leadingProject.coverPosition ?? 'center center' }}
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.14)_0%,rgba(43,33,27,0.84)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.14)_0%,rgba(63,45,39,0.84)_100%)]" />
                 <div className="absolute inset-x-0 bottom-0 p-5">
                   <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">
                     {leadingProject.category}
@@ -70,7 +70,7 @@ export default async function ProjectsPage() {
                   <h2 className="mt-2 font-cormorant text-[2rem] leading-tight text-white">
                     {leadingProject.title}
                   </h2>
-                  <p className="mt-3 font-inter text-sm leading-relaxed text-slate-200">
+                  <p className="mt-3 font-inter text-sm leading-relaxed text-brand-ivory/84">
                     {leadingProject.excerpt}
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export default async function ProjectsPage() {
                   {group.category}
                 </p>
                 <p className="mt-3 font-cormorant text-[2.4rem] text-white">{group.items.length}</p>
-                <p className="mt-2 font-inter text-sm leading-relaxed text-slate-300">{group.description}</p>
+                <p className="mt-2 font-inter text-sm leading-relaxed text-brand-sand/82">{group.description}</p>
               </div>
             ))}
           </div>
@@ -99,14 +99,14 @@ export default async function ProjectsPage() {
               <div className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
                 <div className="max-w-3xl">
                   <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan-strong">{group.category}</p>
-                  <h2 className="mt-2 font-cormorant text-[2.2rem] text-slate-950 lg:text-[3rem]">{group.category}</h2>
-                  <p className="mt-3 font-inter text-sm leading-relaxed text-slate-700">{group.description}</p>
+                  <h2 className="mt-2 font-cormorant text-[2.2rem] text-[#342820] lg:text-[3rem]">{group.category}</h2>
+                  <p className="mt-3 font-inter text-sm leading-relaxed text-[#4f3d32]">{group.description}</p>
                 </div>
                 <div className="rounded-[1.5rem] border border-white/55 bg-white/64 px-5 py-4 backdrop-blur-md">
-                  <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-slate-500">
+                  <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-ivory0">
                     O que observar nesta frente
                   </p>
-                  <p className="mt-2 font-inter text-sm leading-relaxed text-slate-700">
+                  <p className="mt-2 font-inter text-sm leading-relaxed text-[#4f3d32]">
                     Contexto de negócio, decisão arquitetural, restrições reais e como a solução foi organizada para
                     gerar impacto sem simplificar demais o problema.
                   </p>
@@ -148,7 +148,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group grid overflow-hidden rounded-[2rem] border border-white/65 bg-white/70 shadow-[0_28px_80px_-54px_rgba(43,33,27,0.24)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1 lg:grid-cols-[1.15fr_0.85fr]"
+      className="group grid overflow-hidden rounded-[2rem] border border-white/65 bg-white/70 shadow-[0_28px_80px_-54px_rgba(63,45,39,0.24)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1 lg:grid-cols-[1.15fr_0.85fr]"
     >
       <div className="relative min-h-[19rem] overflow-hidden">
         <Image
@@ -158,22 +158,22 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           style={{ objectPosition: project.coverPosition ?? 'center center' }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.12)_0%,rgba(43,33,27,0.56)_100%)]" />
-        <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-[#191613]/55 px-3 py-1 font-inter text-[10px] uppercase tracking-[0.16em] text-brand-sand backdrop-blur-md">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.12)_0%,rgba(63,45,39,0.56)_100%)]" />
+        <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-[#3f2d27]/55 px-3 py-1 font-inter text-[10px] uppercase tracking-[0.16em] text-brand-sand backdrop-blur-md">
           {project.category}
         </div>
       </div>
 
       <div className="flex flex-col justify-between p-6 lg:p-7">
         <div>
-          <p className="font-inter text-[10px] uppercase tracking-[0.16em] text-slate-500">{project.segment}</p>
-          <h3 className="mt-3 font-cormorant text-[2rem] leading-tight text-slate-950">{project.title}</h3>
-          <p className="mt-3 font-inter text-sm leading-relaxed text-slate-700">{project.excerpt}</p>
+          <p className="font-inter text-[10px] uppercase tracking-[0.16em] text-brand-ivory0">{project.segment}</p>
+          <h3 className="mt-3 font-cormorant text-[2rem] leading-tight text-[#342820]">{project.title}</h3>
+          <p className="mt-3 font-inter text-sm leading-relaxed text-[#4f3d32]">{project.excerpt}</p>
         </div>
 
         <div className="mt-6 grid gap-3">
           {project.challengePoints.slice(0, 2).map((point) => (
-            <p key={point} className="font-inter text-[12px] leading-relaxed text-slate-600">
+            <p key={point} className="font-inter text-[12px] leading-relaxed text-[#60483d]">
               {point}
             </p>
           ))}

@@ -168,7 +168,7 @@ export function ContactLeadPage({
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pt-28 pb-10 lg:pt-36 lg:pb-14">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(210,155,124,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-end">
             <motion.div
@@ -183,7 +183,7 @@ export function ContactLeadPage({
               <h1 className="mt-5 font-cormorant text-[2.6rem] leading-[0.98] text-white lg:text-[4.2rem]">
                 {heroTitle}
               </h1>
-              <p className="mt-5 max-w-2xl font-inter text-sm leading-relaxed text-slate-300 lg:text-base">
+              <p className="mt-5 max-w-2xl font-inter text-sm leading-relaxed text-brand-sand/82 lg:text-base">
                 {heroDescription}
               </p>
             </motion.div>
@@ -196,11 +196,11 @@ export function ContactLeadPage({
             >
               <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-4 backdrop-blur-md">
                 <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">Resposta</p>
-                <p className="mt-2 font-inter text-sm leading-relaxed text-slate-200">Retorno inicial em até 1 hora útil</p>
+                <p className="mt-2 font-inter text-sm leading-relaxed text-brand-ivory/84">Retorno inicial em até 1 hora útil</p>
               </div>
               <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-4 backdrop-blur-md">
                 <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan">Formato</p>
-                <p className="mt-2 font-inter text-sm leading-relaxed text-slate-200">Leitura técnica, comercial e operacional da demanda</p>
+                <p className="mt-2 font-inter text-sm leading-relaxed text-brand-ivory/84">Leitura técnica, comercial e operacional da demanda</p>
               </div>
             </motion.div>
           </div>
@@ -218,7 +218,7 @@ export function ContactLeadPage({
               className="space-y-6"
             >
               <div className="panel-shell rounded-[1.9rem] p-6">
-                <h2 className="font-cormorant text-[2rem] text-slate-950">O que acontece depois do envio</h2>
+                <h2 className="font-cormorant text-[2rem] text-[#342820]">O que acontece depois do envio</h2>
                 <div className="mt-5 space-y-4">
                   {nextSteps.map((step, index) => (
                     <div key={step} className="flex items-start gap-4">
@@ -227,14 +227,14 @@ export function ContactLeadPage({
                           0{index + 1}
                         </span>
                       </div>
-                      <p className="font-inter text-sm leading-relaxed text-slate-700">{step}</p>
+                      <p className="font-inter text-sm leading-relaxed text-[#4f3d32]">{step}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
               <div className="panel-shell rounded-[1.9rem] p-6">
-                <h3 className="font-cormorant text-[1.8rem] text-slate-950">Contato direto</h3>
+                <h3 className="font-cormorant text-[1.8rem] text-[#342820]">Contato direto</h3>
                 <div className="mt-5 space-y-5">
                   {contactInfo.map((item) => (
                     <div key={item.label} className="flex items-start gap-4">
@@ -242,15 +242,15 @@ export function ContactLeadPage({
                         <item.icon size={20} className="text-brand-cyan-strong" />
                       </div>
                       <div>
-                        <span className="block font-inter text-xs uppercase tracking-[0.15em] text-slate-500">
+                        <span className="block font-inter text-xs uppercase tracking-[0.15em] text-brand-ivory0">
                           {item.label}
                         </span>
                         {item.href ? (
-                          <a href={item.href} className="mt-1 inline-block font-inter text-base text-slate-900 transition-colors hover:text-brand-cyan-strong">
+                          <a href={item.href} className="mt-1 inline-block font-inter text-base text-[#3f2d27] transition-colors hover:text-brand-cyan-strong">
                             {item.value}
                           </a>
                         ) : (
-                          <span className="mt-1 inline-block font-inter text-base text-slate-900">{item.value}</span>
+                          <span className="mt-1 inline-block font-inter text-base text-[#3f2d27]">{item.value}</span>
                         )}
                       </div>
                     </div>
@@ -258,7 +258,7 @@ export function ContactLeadPage({
                 </div>
 
                 <div className="mt-6">
-                  <h4 className="font-inter text-xs uppercase tracking-[0.2em] text-slate-500">Rede</h4>
+                  <h4 className="font-inter text-xs uppercase tracking-[0.2em] text-brand-ivory0">Rede</h4>
                   <div className="mt-4 flex gap-4">
                     {socialLinks.map((social) => (
                       <a
@@ -266,7 +266,7 @@ export function ContactLeadPage({
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-line-subtle text-slate-500 transition-all hover:-translate-y-0.5 hover:border-brand-cyan hover:text-brand-cyan-strong"
+                        className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-line-subtle text-brand-ivory0 transition-all hover:-translate-y-0.5 hover:border-brand-cyan hover:text-brand-cyan-strong"
                         aria-label={social.label}
                       >
                         <social.icon size={20} />
@@ -286,8 +286,8 @@ export function ContactLeadPage({
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h2 className="font-cormorant text-[2rem] text-slate-950">{formTitle}</h2>
-                  <p className="mt-2 font-inter text-sm leading-relaxed text-slate-600">
+                  <h2 className="font-cormorant text-[2rem] text-[#342820]">{formTitle}</h2>
+                  <p className="mt-2 font-inter text-sm leading-relaxed text-[#60483d]">
                     Quanto melhor o contexto enviado, mais preciso será o enquadramento inicial da demanda.
                   </p>
                 </div>
@@ -393,8 +393,8 @@ export function ContactLeadPage({
                       </Field>
                     ) : (
                       <div className="rounded-[1.45rem] border border-white/55 bg-white/58 p-4 backdrop-blur-md">
-                        <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-slate-500">Observação</p>
-                        <p className="mt-2 font-inter text-sm leading-relaxed text-slate-700">
+                        <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-ivory0">Observação</p>
+                        <p className="mt-2 font-inter text-sm leading-relaxed text-[#4f3d32]">
                           Se você ainda não tem escopo fechado, envie mesmo assim. O enquadramento inicial serve para ajudar nessa definição.
                         </p>
                       </div>
@@ -457,7 +457,7 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={fieldId} className="mb-2 block font-inter text-xs uppercase tracking-[0.15em] text-slate-600">
+      <label htmlFor={fieldId} className="mb-2 block font-inter text-xs uppercase tracking-[0.15em] text-[#60483d]">
         {label}
       </label>
       {children}

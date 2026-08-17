@@ -30,7 +30,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="section-shell-dark premium-grid text-slate-100">
+    <footer className="section-shell-dark premium-grid text-brand-ivory">
       <div className="container mx-auto px-6 pb-10 pt-16 lg:px-12 lg:pb-12 lg:pt-[4.5rem]">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -45,7 +45,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
               <h2 className="mt-5 max-w-3xl font-cormorant text-[2rem] leading-[1.02] text-white lg:text-[3.35rem]">
                 Estruture tecnologia com rigor executivo, sem abrir mão de velocidade.
               </h2>
-              <p className="mt-4 max-w-2xl font-inter text-sm leading-relaxed text-slate-300 lg:text-base">
+              <p className="mt-4 max-w-2xl font-inter text-sm leading-relaxed text-brand-sand/84 lg:text-base">
                 A Arcane desenha sistemas, automações e integrações para empresas que precisam reduzir fricção
                 operacional e ganhar capacidade real de escala.
               </p>
@@ -88,7 +88,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
                 {siteConfig.brand.subLabel}
               </span>
             </Link>
-            <p className="mt-4 max-w-md font-inter text-sm leading-relaxed text-slate-300">
+            <p className="mt-4 max-w-md font-inter text-sm leading-relaxed text-brand-sand/82">
               Engenharia de software, automação e integração para negócios que precisam transformar complexidade em
               vantagem operacional.
             </p>
@@ -100,7 +100,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.06 }}
           >
-            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-slate-200">
+            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory/86">
               Navegação
             </h4>
             <nav className="mt-4 flex flex-col gap-3">
@@ -108,7 +108,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="group inline-flex items-center gap-2 font-inter text-sm text-slate-400 transition-colors hover:text-brand-cyan"
+                  className="group inline-flex items-center gap-2 font-inter text-sm text-brand-sand/72 transition-colors hover:text-brand-cyan"
                 >
                   {link.label}
                   <ArrowUpRight size={13} className="opacity-0 transition-opacity group-hover:opacity-100" />
@@ -123,13 +123,13 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.12 }}
           >
-            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-slate-200">
+            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory/86">
               Contato
             </h4>
             <div className="mt-4 flex flex-col gap-4">
               <a
                 href={`mailto:${siteConfig.contact.email}`}
-                className="flex items-start gap-3 font-inter text-sm text-slate-300 transition-colors hover:text-brand-cyan"
+                className="flex items-start gap-3 font-inter text-sm text-brand-sand/82 transition-colors hover:text-brand-cyan"
               >
                 <Mail size={16} className="mt-0.5 shrink-0" />
                 <span>{siteConfig.contact.email}</span>
@@ -137,13 +137,13 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
               {siteConfig.contact.phoneDisplay && siteConfig.contact.phoneE164 ? (
                 <a
                   href={`tel:+${siteConfig.contact.phoneE164}`}
-                  className="flex items-start gap-3 font-inter text-sm text-slate-300 transition-colors hover:text-brand-cyan"
+                  className="flex items-start gap-3 font-inter text-sm text-brand-sand/82 transition-colors hover:text-brand-cyan"
                 >
                   <span className="inline-flex h-4 w-4 items-center justify-center text-[11px]">+</span>
                   <span>{siteConfig.contact.phoneDisplay}</span>
                 </a>
               ) : null}
-              <div className="flex items-start gap-3 font-inter text-sm text-slate-300">
+              <div className="flex items-start gap-3 font-inter text-sm text-brand-sand/82">
                 <MapPin size={16} className="mt-0.5 shrink-0" />
                 <span>{siteConfig.contact.city}</span>
               </div>
@@ -156,7 +156,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.18 }}
           >
-            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-slate-200">
+            <h4 className="font-inter text-[11px] uppercase tracking-[0.2em] text-brand-ivory/86">
               Rede
             </h4>
             <div className="mt-4 flex gap-3">
@@ -166,7 +166,7 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-white/6 text-slate-300 transition-all hover:-translate-y-0.5 hover:border-brand-cyan/55 hover:text-brand-cyan"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-ivory/18 bg-brand-ivory/8 text-brand-sand/82 transition-all hover:-translate-y-0.5 hover:border-brand-cyan/55 hover:text-brand-cyan"
                   aria-label={social.label}
                 >
                   <social.icon size={17} />
@@ -179,17 +179,17 @@ export function Footer({ ctas }: { ctas: ConversionCtaConfig }) {
 
       <div className="border-t border-white/10">
         <div className="container mx-auto flex flex-col gap-4 px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-12">
-          <p className="font-inter text-xs text-slate-500">
+          <p className="font-inter text-xs text-brand-sand/56">
             © {currentYear} {siteConfig.brand.name}. Todos os direitos reservados.
           </p>
           <div className="flex flex-wrap gap-5">
-            <Link href="/privacy" className="font-inter text-xs text-slate-500 transition-colors hover:text-brand-cyan">
+            <Link href="/privacy" className="font-inter text-xs text-brand-sand/56 transition-colors hover:text-brand-cyan">
               Política de Privacidade
             </Link>
-            <Link href="/terms" className="font-inter text-xs text-slate-500 transition-colors hover:text-brand-cyan">
+            <Link href="/terms" className="font-inter text-xs text-brand-sand/56 transition-colors hover:text-brand-cyan">
               Termos de Uso
             </Link>
-            <Link href="/cookies" className="font-inter text-xs text-slate-500 transition-colors hover:text-brand-cyan">
+            <Link href="/cookies" className="font-inter text-xs text-brand-sand/56 transition-colors hover:text-brand-cyan">
               Cookies
             </Link>
           </div>

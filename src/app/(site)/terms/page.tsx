@@ -32,7 +32,7 @@ export default async function TermsPage() {
           <h1 className="mt-5 font-cormorant text-[2.6rem] leading-[0.98] text-white lg:text-[4rem]">
             {content.terms_title}
           </h1>
-          <p className="mt-4 font-inter text-sm leading-relaxed text-slate-300">
+          <p className="mt-4 font-inter text-sm leading-relaxed text-brand-sand/82">
             Última atualização: {content.terms_last_update}
           </p>
         </div>
@@ -40,7 +40,7 @@ export default async function TermsPage() {
 
       <section className="section-shell min-h-screen py-12 lg:py-16">
         <div className="container mx-auto max-w-4xl px-6 lg:px-12">
-          <div className="panel-shell rounded-[2rem] space-y-6 p-6 font-inter text-sm leading-relaxed text-slate-700 lg:p-8">
+          <div className="panel-shell rounded-[2rem] space-y-6 p-6 font-inter text-sm leading-relaxed text-[#4f3d32] lg:p-8">
             <p>{content.terms_body.replace('Arcane Tecnologia', siteConfig.brand.name)}</p>
           </div>
         </div>

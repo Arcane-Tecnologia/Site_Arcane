@@ -46,12 +46,12 @@ export function Hero({
         className="hero-overlay absolute inset-0"
         style={{
           background:
-            'linear-gradient(180deg, rgba(25, 22, 19, 0.62) 0%, rgba(25, 22, 19, 0.74) 42%, rgba(25, 22, 19, 0.94) 100%)',
+            'linear-gradient(180deg, rgba(63, 45, 39, 0.56) 0%, rgba(63, 45, 39, 0.7) 42%, rgba(43, 31, 26, 0.92) 100%)',
         }}
       />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_26%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(201,129,93,0.1),transparent_18%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(201,129,93,0.5),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(210,155,124,0.18),transparent_26%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(210,155,124,0.1),transparent_18%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(210,155,124,0.5),transparent)]" />
 
       <div className="container relative z-10 mx-auto flex min-h-screen items-center px-6 pb-14 pt-32 lg:px-12 lg:pb-16 lg:pt-[8.5rem]">
         <motion.div
@@ -66,7 +66,7 @@ export function Hero({
             {title}
           </h1>
 
-          <p className="mt-6 max-w-xl font-inter text-sm leading-relaxed text-slate-200 lg:text-base">
+          <p className="mt-6 max-w-xl font-inter text-sm leading-relaxed text-brand-ivory/84 lg:text-base">
             {subtitle}
           </p>
 

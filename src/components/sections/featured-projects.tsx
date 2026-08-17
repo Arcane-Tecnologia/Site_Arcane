@@ -38,7 +38,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
 
           <Link
             href="/projects"
-            className="group inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-slate-300 transition-colors hover:text-white"
+            className="group inline-flex items-center gap-3 font-inter text-[11px] uppercase tracking-[0.18em] text-brand-sand/82 transition-colors hover:text-white"
           >
             Ver todos os projetos
             <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
@@ -67,7 +67,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group relative block min-h-[24rem] overflow-hidden rounded-[1.8rem] border border-white/10 bg-slate-900/50"
+      className="group relative block min-h-[24rem] overflow-hidden rounded-[1.8rem] border border-white/10 bg-[#3f2d27]/50"
     >
       <div className="absolute inset-0">
         <Image
@@ -77,14 +77,14 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           style={{ objectPosition: project.coverPosition ?? 'center center' }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(25,22,19,0.08)_0%,rgba(25,22,19,0.78)_60%,rgba(25,22,19,0.96)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.08)_0%,rgba(63,45,39,0.78)_60%,rgba(63,45,39,0.96)_100%)]" />
       </div>
 
       <div className="relative z-10 flex h-full flex-col justify-end p-5 lg:p-6">
         <h3 className="max-w-xl font-cormorant text-[2rem] leading-tight text-white lg:text-[2.45rem]">
           {project.title}
         </h3>
-        <p className="mt-3 max-w-xl font-inter text-sm leading-relaxed text-slate-200/92">
+        <p className="mt-3 max-w-xl font-inter text-sm leading-relaxed text-brand-ivory/92">
           {project.excerpt}
         </p>
         <div className="mt-6 inline-flex items-center gap-2 font-inter text-[11px] uppercase tracking-[0.18em] text-white/84">

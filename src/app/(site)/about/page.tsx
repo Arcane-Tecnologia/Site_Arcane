@@ -63,7 +63,7 @@ export default async function AboutPage() {
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pb-14 pt-32 lg:pb-[4.5rem] lg:pt-40">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.18),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(210,155,124,0.18),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
             <div className="max-w-4xl">
@@ -71,7 +71,7 @@ export default async function AboutPage() {
               <h1 className="mt-5 font-cormorant text-[2.8rem] leading-[0.98] text-white lg:text-[4.9rem]">
                 {content.about_heading}
               </h1>
-              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-slate-300 lg:text-base">
+              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-brand-sand/82 lg:text-base">
                 {content.about_manifesto}
               </p>
             </div>
@@ -102,10 +102,10 @@ export default async function AboutPage() {
                 <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan-strong">
                   Princípio 0{index + 1}
                 </p>
-                <h2 className="mt-3 font-cormorant text-[2rem] leading-tight text-slate-950">
+                <h2 className="mt-3 font-cormorant text-[2rem] leading-tight text-[#342820]">
                   {principle.title}
                 </h2>
-                <p className="mt-4 font-inter text-sm leading-relaxed text-slate-700">
+                <p className="mt-4 font-inter text-sm leading-relaxed text-[#4f3d32]">
                   {principle.description}
                 </p>
               </article>
@@ -118,7 +118,7 @@ export default async function AboutPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="mx-auto max-w-3xl text-center">
             <span className="section-kicker justify-center">Como operamos</span>
-            <h2 className="mt-5 font-cormorant text-[2.2rem] text-slate-950 lg:text-[3rem]">
+            <h2 className="mt-5 font-cormorant text-[2.2rem] text-[#342820] lg:text-[3rem]">
               Um modelo de trabalho para reduzir risco e acelerar decisão com base sólida.
             </h2>
           </div>
@@ -129,10 +129,10 @@ export default async function AboutPage() {
                 <p className="font-inter text-[11px] uppercase tracking-[0.22em] text-brand-cyan-strong">
                   {item.step}
                 </p>
-                <h3 className="mt-3 font-cormorant text-[1.8rem] leading-tight text-slate-950">
+                <h3 className="mt-3 font-cormorant text-[1.8rem] leading-tight text-[#342820]">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-inter text-sm leading-relaxed text-slate-700">
+                <p className="mt-3 font-inter text-sm leading-relaxed text-[#4f3d32]">
                   {item.description}
                 </p>
               </article>

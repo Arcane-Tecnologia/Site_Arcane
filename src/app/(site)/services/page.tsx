@@ -48,7 +48,7 @@ export default async function ServicesPage() {
   return (
     <>
       <section className="section-shell-dark premium-grid relative overflow-hidden pb-14 pt-32 lg:pb-[4.5rem] lg:pt-40">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,129,93,0.16),transparent_24%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(210,155,124,0.16),transparent_24%)]" />
         <div className="container relative z-10 mx-auto px-6 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.92fr] lg:items-end">
             <div className="max-w-4xl">
@@ -56,7 +56,7 @@ export default async function ServicesPage() {
               <h1 className="mt-5 font-cormorant text-[2.6rem] leading-[0.98] text-white lg:text-[4.75rem]">
                 {content.services_heading}
               </h1>
-              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-slate-300 lg:text-base">
+              <p className="mt-5 max-w-3xl font-inter text-sm leading-relaxed text-brand-sand/82 lg:text-base">
                 {content.services_description}
               </p>
             </div>
@@ -68,8 +68,8 @@ export default async function ServicesPage() {
               <div className="mt-4 space-y-4">
                 {decisionSignals.map((signal) => (
                   <div key={signal} className="flex items-start gap-3">
-                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brand-cyan shadow-[0_0_24px_rgba(201,129,93,0.64)]" />
-                    <p className="font-inter text-sm leading-relaxed text-slate-300">{signal}</p>
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brand-cyan shadow-[0_0_24px_rgba(210,155,124,0.64)]" />
+                    <p className="font-inter text-sm leading-relaxed text-brand-sand/82">{signal}</p>
                   </div>
                 ))}
               </div>
@@ -85,10 +85,10 @@ export default async function ServicesPage() {
               <article key={service.slug}>
                 <Link
                   href={`/services/${service.slug}`}
-                  className="group panel-shell flex h-full flex-col overflow-hidden rounded-[1.95rem] p-4 transition-all hover:-translate-y-1 hover:border-brand-cyan/35 hover:shadow-[0_34px_88px_-48px_rgba(43,33,27,0.24)]"
+                  className="group panel-shell flex h-full flex-col overflow-hidden rounded-[1.95rem] p-4 transition-all hover:-translate-y-1 hover:border-brand-cyan/35 hover:shadow-[0_34px_88px_-48px_rgba(63,45,39,0.24)]"
                 >
                   <div className="relative overflow-hidden rounded-[1.4rem] border border-white/60">
-                    <div className="absolute left-4 top-4 z-10 rounded-full border border-white/65 bg-white/82 px-3 py-1 font-inter text-[10px] uppercase tracking-[0.18em] text-slate-600 backdrop-blur-md">
+                    <div className="absolute left-4 top-4 z-10 rounded-full border border-white/65 bg-white/82 px-3 py-1 font-inter text-[10px] uppercase tracking-[0.18em] text-[#60483d] backdrop-blur-md">
                       {service.category}
                     </div>
                     <div className="relative h-56">
@@ -98,7 +98,7 @@ export default async function ServicesPage() {
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,33,27,0.08)_0%,rgba(43,33,27,0.5)_100%)]" />
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,45,39,0.08)_0%,rgba(63,45,39,0.5)_100%)]" />
                     </div>
                   </div>
 
@@ -106,20 +106,20 @@ export default async function ServicesPage() {
                     <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-cyan-strong">
                       {service.decisionLabel}
                     </p>
-                    <h2 className="mt-3 font-cormorant text-[2rem] leading-tight text-slate-950">
+                    <h2 className="mt-3 font-cormorant text-[2rem] leading-tight text-[#342820]">
                       {service.title}
                     </h2>
-                    <p className="mt-3 font-inter text-sm leading-relaxed text-slate-700">
+                    <p className="mt-3 font-inter text-sm leading-relaxed text-[#4f3d32]">
                       {service.excerpt}
                     </p>
 
                     <div className="mt-5 grid gap-3">
                       {service.proofHighlights.slice(0, 2).map((highlight) => (
                         <div key={highlight.label} className="rounded-[1.2rem] border border-white/60 bg-white/55 px-4 py-3">
-                          <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-slate-500">
+                          <p className="font-inter text-[10px] uppercase tracking-[0.18em] text-brand-ivory0">
                             {highlight.label}
                           </p>
-                          <p className="mt-1 font-inter text-sm leading-relaxed text-slate-700">
+                          <p className="mt-1 font-inter text-sm leading-relaxed text-[#4f3d32]">
                             {highlight.value}
                           </p>
                         </div>
@@ -142,7 +142,7 @@ export default async function ServicesPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="mx-auto max-w-3xl text-center">
             <span className="section-kicker justify-center">Como enquadramos projetos</span>
-            <h2 className="mt-5 font-cormorant text-[2.2rem] text-slate-950 lg:text-[3rem]">
+            <h2 className="mt-5 font-cormorant text-[2.2rem] text-[#342820] lg:text-[3rem]">
               Processo de trabalho para reduzir risco, alinhar decisão e acelerar entrega.
             </h2>
           </div>
@@ -153,10 +153,10 @@ export default async function ServicesPage() {
                 <p className="font-inter text-[11px] uppercase tracking-[0.22em] text-brand-cyan-strong">
                   {step.number}
                 </p>
-                <h3 className="mt-3 font-cormorant text-[1.8rem] leading-tight text-slate-950">
+                <h3 className="mt-3 font-cormorant text-[1.8rem] leading-tight text-[#342820]">
                   {step.title}
                 </h3>
-                <p className="mt-3 font-inter text-sm leading-relaxed text-slate-700">{step.description}</p>
+                <p className="mt-3 font-inter text-sm leading-relaxed text-[#4f3d32]">{step.description}</p>
               </article>
             ))}
           </div>
@@ -175,7 +175,7 @@ export default async function ServicesPage() {
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/agendar-reuniao"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(168,93,58,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-cyan bg-brand-cyan px-8 py-3 font-inter text-[11px] uppercase tracking-[0.18em] text-white shadow-[0_24px_60px_-30px_rgba(183,121,86,0.62)] transition-all hover:-translate-y-0.5 hover:bg-brand-cyan-strong hover:text-white"
             >
               Agendar reunião técnica
               <ArrowRight size={14} />

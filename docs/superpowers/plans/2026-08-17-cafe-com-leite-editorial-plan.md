@@ -30,7 +30,7 @@
 
 - [x] **Step 1: Escrever a especificação visual aprovada**
 - [x] **Step 2: Escrever este plano com arquivos e verificações concretas**
-- [ ] **Step 3: Fazer commit da documentação antes da implementação**
+- [x] **Step 3: Fazer commit da documentação antes da implementação**
 
 ### Task 2: Atualizar tokens e shells globais
 
@@ -41,10 +41,10 @@
 - Consumes: paleta aprovada na especificação visual.
 - Produces: variáveis globais de marrom, creme e bronze consumidas pelos componentes existentes.
 
-- [ ] **Step 1: Substituir valores de `:root` e `.dark` pelos valores aprovados**
-- [ ] **Step 2: Ajustar `body`, `.section-shell`, `.section-shell-alt`, `.section-shell-dark`, `.panel-shell`, `.panel-shell-dark`, `.cta-shell` e utilitários de halo/divisor**
-- [ ] **Step 3: Manter os aliases `brand-cyan*` apontando para bronze e remover aparência azul/ciano**
-- [ ] **Step 4: Confirmar que o CSS continua compilando no dev server**
+- [x] **Step 1: Substituir valores de `:root` e `.dark` pelos valores aprovados**
+- [x] **Step 2: Ajustar `body`, `.section-shell`, `.section-shell-alt`, `.section-shell-dark`, `.panel-shell`, `.panel-shell-dark`, `.cta-shell` e utilitários de halo/divisor**
+- [x] **Step 3: Manter os aliases `brand-cyan*` apontando para bronze e remover aparência azul/ciano**
+- [x] **Step 4: Confirmar que o CSS continua compilando no dev server**
 
 ### Task 3: Alinhar componentes compartilhados e primeira dobra
 
@@ -59,10 +59,10 @@
 - Consumes: tokens e shells globais atualizados na Task 2.
 - Produces: navegação, hero, CTAs, rodapé e chat com a mesma direção editorial.
 
-- [ ] **Step 1: Trocar o header quase preto por café médio/profundo e manter logo/navegação legíveis**
-- [ ] **Step 2: Ajustar overlays do hero para cacau translúcido e acentos bronze**
-- [ ] **Step 3: Ajustar variantes de CTA, footer e chat para bronze/creme/café**
-- [ ] **Step 4: Verificar estados ativo, hover, mobile e foco dos componentes compartilhados**
+- [x] **Step 1: Trocar o header quase preto por café médio/profundo e manter logo/navegação legíveis**
+- [x] **Step 2: Ajustar overlays do hero para cacau translúcido e acentos bronze**
+- [x] **Step 3: Ajustar variantes de CTA, footer e chat para bronze/creme/café**
+- [x] **Step 4: Verificar estados ativo, hover, mobile e foco dos componentes compartilhados**
 
 ### Task 4: Corrigir valores literais nas páginas públicas
 
@@ -74,10 +74,10 @@
 - Consumes: tokens globais e componentes compartilhados atualizados.
 - Produces: consistência visual nas páginas home, serviços, projetos, sobre, contato, orçamento, reunião e páginas legais.
 
-- [ ] **Step 1: Localizar os valores antigos restantes com `rg`**
-- [ ] **Step 2: Substituir overlays, fundos, bordas e textos literais por tokens/valores marrons equivalentes**
-- [ ] **Step 3: Preservar contraste em cards de imagem e blocos escuros**
-- [ ] **Step 4: Revisar o diff para garantir que nenhuma copy ou rota mudou**
+- [x] **Step 1: Localizar os valores antigos restantes com `rg`**
+- [x] **Step 2: Substituir overlays, fundos, bordas e textos literais por tokens/valores marrons equivalentes**
+- [x] **Step 3: Preservar contraste em cards de imagem e blocos escuros**
+- [x] **Step 4: Revisar o diff para garantir que nenhuma copy ou rota mudou**
 
 ### Task 5: Verificar rotas e qualidade
 
@@ -88,10 +88,9 @@
 - Consumes: implementação completa das Tasks 2–4.
 - Produces: confirmação de renderização, lint e typecheck sem regressões.
 
-- [ ] **Step 1: Verificar `/`, `/services`, `/projects`, `/about`, `/contact`, `/solicitar-orcamento` e `/agendar-reuniao` com `Invoke-WebRequest`**
-- [ ] **Step 2: Abrir a home no navegador local e revisar visualmente desktop/mobile**
-- [ ] **Step 3: Rodar `pnpm lint`**
-- [ ] **Step 4: Rodar `pnpm typecheck`**
-- [ ] **Step 5: Rodar `pnpm test:regressions` se estiver disponível e registrar o resultado**
+- [x] **Step 1: Verificar `/`, `/services`, `/projects`, `/about`, `/contact`, `/solicitar-orcamento` e `/agendar-reuniao` com `Invoke-WebRequest`**
+- [x] **Step 2: Abrir a home no navegador local e revisar visualmente desktop/mobile**
+- [x] **Step 3: Rodar `pnpm lint`**
+- [x] **Step 4: Rodar `pnpm typecheck`**
+- [x] **Step 5: Rodar `pnpm test:regressions` se estiver disponível e registrar o resultado**
 - [ ] **Step 6: Fazer commit da implementação e enviar ao remoto `origin/main`**
-
