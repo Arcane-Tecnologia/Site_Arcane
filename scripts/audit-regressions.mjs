@@ -49,6 +49,7 @@ assert.match(nextConfig, /formats:\s*\[\s*['"]image\/avif['"],\s*['"]image\/webp
 assert.match(nextConfig, /source:\s*['"]\/images\/\:path\*['"]/, 'imagens públicas devem ter política de cache explícita')
 assert.match(fonts, /Cormorant_Garamond\(\{[\s\S]*weight:\s*\[['"]400['"],\s*['"]500['"],\s*['"]600['"],\s*['"]700['"]\]/, 'Cormorant deve carregar apenas pesos usados')
 assert.doesNotMatch(fonts, /Playfair_Display/, 'fonte não utilizada não deve ser carregada')
+assert.match(siteConfig, /email:\s*['"]comercial@arcanetecnologia\.com\.br['"]/, 'e-mail geral deve usar o endereço informado')
 assert.match(siteConfig, /salesEmail:\s*['"]comercial@arcanetecnologia\.com\.br['"]/, 'e-mail comercial deve usar o endereço informado')
 assert.match(sitemap, /contentLastModified/, 'sitemap deve usar a data de conteúdo centralizada')
 assert.match(header, /siteConfig\.contact\.salesEmail[\s\S]*text-brand-ivory(?!\/)/, 'e-mail do header deve manter contraste integral')

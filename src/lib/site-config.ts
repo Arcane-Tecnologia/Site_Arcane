@@ -7,7 +7,7 @@ export const siteConfig = {
     tagline: 'Arquitetura, automação e software sob medida para operações críticas.',
   },
   contact: {
-    email: 'contato@arcane.tech',
+    email: 'comercial@arcanetecnologia.com.br',
     salesEmail: 'comercial@arcanetecnologia.com.br',
     privacyEmail: 'privacy@arcane.tech',
     phoneDisplay: '(12) 99133-2258',
